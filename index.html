@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HRG International — Premium Digital Products</title>
+<meta name="description" content="HRG International — premium digital templates, design assets, eBooks and planners. Instant download, secure PayPal checkout. Based in Peterborough, UK.">
+<meta name="theme-color" content="#0f1b2d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0f1b2d;--ink-2:#26344a;--ink-3:#4a5568;--paper:#f7f3ec;--paper-2:#efe8dc;--card:#ffffff;--line:#e5dccd;
+  --accent:#d9572b;--accent-d:#b8441d;--sage:#1f6f5c;--gold:#e9b949;--muted:#6b7280;--danger:#c0392b;--ok:#1f8a5b;
+  --r:16px;--r-sm:10px;--shadow:0 1px 2px rgba(15,27,45,.06),0 8px 30px rgba(15,27,45,.08);
+  --serif:'Fraunces',Georgia,serif;--sans:'Manrope',system-ui,-apple-system,Segoe UI,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;letter-spacing:-.01em}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.muted{color:var(--muted)}
+.hidden{display:none!important}
+
+/* Buttons & forms */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;border:1.5px solid transparent;font-weight:700;font-size:15px;cursor:pointer;transition:.18s;white-space:nowrap}
+.btn-primary{background:var(--ink);color:#fff}.btn-primary:hover{background:var(--ink-2);transform:translateY(-1px)}
+.btn-accent{background:var(--accent);color:#fff}.btn-accent:hover{background:var(--accent-d);transform:translateY(-1px)}
+.btn-ghost{background:transparent;border-color:var(--ink);color:var(--ink)}.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;border-color:var(--line)}.btn-light:hover{border-color:var(--ink)}
+.btn-sm{padding:8px 14px;font-size:13px}
+.btn-danger{background:#fff;border-color:#efc2bc;color:var(--danger)}.btn-danger:hover{background:var(--danger);color:#fff}
+.btn-block{width:100%}
+.btn[disabled]{opacity:.55;pointer-events:none}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.field label{font-size:13px;font-weight:700;color:var(--ink-2)}
+.input,select.input,textarea.input{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:var(--r-sm);background:#fff;outline:none;transition:.15s}
+.input:focus{border-color:var(--ink);box-shadow:0 0 0 4px rgba(15,27,45,.07)}
+textarea.input{min-height:110px;resize:vertical}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:14px;margin-bottom:12px;cursor:pointer}
+.check input{margin-top:4px;width:17px;height:17px;accent-color:var(--ink);flex:none}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.alert{padding:12px 16px;border-radius:var(--r-sm);font-size:14px;margin-bottom:16px}
+.alert-err{background:#fdecea;color:#8e2a1e}.alert-ok{background:#e6f4ec;color:#145c3b}.alert-info{background:#eef2f8;color:#223a5e}
+
+/* Header */
+.announce{background:var(--ink);color:#f4ead9;font-size:13px;text-align:center;padding:9px 16px;font-weight:600}
+.announce b{color:var(--gold)}
+header.site{position:sticky;top:0;z-index:40;background:rgba(247,243,236,.88);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em}
+.logo-mark{width:38px;height:38px;border-radius:11px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-size:18px;position:relative;overflow:hidden}
+.logo-mark:after{content:"";position:absolute;width:18px;height:18px;border-radius:50%;background:var(--accent);right:-6px;bottom:-6px}
+.logo small{display:block;font-size:10px;letter-spacing:.2em;color:var(--muted);font-weight:700;margin-top:-3px}
+.menu{display:flex;gap:28px;font-weight:600;font-size:15px}
+.menu a{position:relative;padding:4px 0}
+.menu a:after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--accent);transition:.2s}
+.menu a:hover:after,.menu a.active:after{width:100%}
+.nav-actions{display:flex;align-items:center;gap:8px}
+.icon-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid transparent;background:transparent;cursor:pointer;position:relative;transition:.15s}
+.icon-btn:hover{background:#fff;border-color:var(--line)}
+.icon-btn svg{width:20px;height:20px}
+.badge{position:absolute;top:2px;right:0;background:var(--accent);color:#fff;font-size:11px;font-weight:800;min-width:19px;height:19px;border-radius:10px;display:grid;place-items:center;padding:0 5px}
+.burger{display:none}
+.search-bar{border-top:1px solid var(--line);padding:14px 0;display:none}
+.search-bar.open{display:block}
+
+/* Hero */
+.hero{padding:72px 0 56px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(40px,5.6vw,70px);margin:16px 0 20px}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero p.lead{font-size:19px;color:var(--ink-3);max-width:540px;margin-bottom:30px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-meta{display:flex;gap:28px;margin-top:36px;flex-wrap:wrap}
+.hero-meta div{font-size:13px;color:var(--muted)}
+.hero-meta b{display:block;font-family:var(--serif);font-size:26px;color:var(--ink)}
+.hero-art{position:relative;height:480px}
+.hero-art .blob{position:absolute;inset:30px 0 0 40px;border-radius:40% 60% 55% 45%/50% 45% 55% 50%;background:radial-gradient(circle at 30% 30%,#f3c9b4,transparent 60%),radial-gradient(circle at 70% 70%,#bfdccf,transparent 55%),var(--paper-2)}
+.float-card{position:absolute;width:230px;background:#fff;border-radius:18px;box-shadow:0 20px 50px rgba(15,27,45,.16);overflow:hidden;transition:.4s}
+.float-card .cv{aspect-ratio:4/3}
+.float-card .fc-b{padding:12px 14px;font-size:13px;font-weight:700;display:flex;justify-content:space-between;gap:8px}
+.float-card:nth-child(2){top:10px;left:20px;transform:rotate(-6deg)}
+.float-card:nth-child(3){top:90px;right:0;transform:rotate(5deg);z-index:2}
+.float-card:nth-child(4){bottom:0;left:90px;transform:rotate(-2deg);z-index:3}
+.float-card:hover{transform:rotate(0) scale(1.04);z-index:5}
+
+/* Sections */
+section{padding:72px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:36px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(30px,3.6vw,44px);margin-top:8px}
+.trust{background:#fff;border-block:1px solid var(--line);padding:26px 0}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.trust-item{display:flex;gap:14px;align-items:center;font-size:14px}
+.trust-item .ti{width:44px;height:44px;border-radius:12px;background:var(--paper);display:grid;place-items:center;flex:none}
+.trust-item b{display:block;font-size:15px}
+
+/* Product cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
+.card{background:var(--card);border-radius:var(--r);overflow:hidden;border:1px solid var(--line);display:flex;flex-direction:column;transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}
+.cv{position:relative;aspect-ratio:4/3;background:var(--paper-2);overflow:hidden}
+.cv img,.cv svg{width:100%;height:100%;object-fit:cover}
+.cv .tag{position:absolute;top:12px;left:12px;background:#fff;font-size:11px;font-weight:800;padding:5px 10px;border-radius:999px;letter-spacing:.04em}
+.cv .tag.sale{background:var(--accent);color:#fff;left:auto;right:12px}
+.card-b{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+.card-cat{font-size:12px;font-weight:700;color:var(--sage);text-transform:uppercase;letter-spacing:.08em}
+.card h3{font-size:20px;margin:6px 0 8px}
+.card p{font-size:14px;color:var(--muted);flex:1}
+.card-f{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:10px}
+.price{font-weight:800;font-size:20px}
+.price s{font-weight:500;font-size:14px;color:var(--muted);margin-left:6px}
+
+/* Categories */
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.cat{border-radius:var(--r);padding:26px;min-height:190px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;position:relative;overflow:hidden;transition:.25s}
+.cat:hover{transform:translateY(-4px)}
+.cat:after{content:"";position:absolute;width:140px;height:140px;border-radius:50%;background:rgba(255,255,255,.12);right:-40px;bottom:-40px}
+.cat h3{font-size:24px}
+.cat p{font-size:14px;opacity:.85}
+.cat span{font-weight:700;font-size:14px}
+
+/* Steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:s}
+.step{background:#fff;border-radius:var(--r);padding:30px;border:1px solid var(--line);position:relative}
+.step:before{counter-increment:s;content:"0" counter(s);font-family:var(--serif);font-size:48px;color:var(--paper-2);position:absolute;right:22px;top:12px}
+.step h3{font-size:22px;margin:14px 0 8px}
+.step p{color:var(--muted);font-size:15px}
+.dark{background:var(--ink);color:#f4ead9}
+.dark h2,.dark h3{color:#fff}
+.dark .muted{color:#a8b3c4}
+.cta-band{border-radius:28px;background:var(--ink);color:#fff;padding:56px;display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:center;position:relative;overflow:hidden}
+.cta-band:before{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:var(--accent);opacity:.9;right:-90px;top:-120px}
+.cta-band>*{position:relative}
+.cta-band h2{font-size:clamp(28px,3.4vw,42px)}
+
+/* FAQ */
+.faq details{background:#fff;border:1px solid var(--line);border-radius:var(--r-sm);padding:18px 22px;margin-bottom:12px}
+.faq summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
+.faq summary:after{content:"+";font-size:22px;line-height:1;color:var(--accent)}
+.faq details[open] summary:after{content:"–"}
+.faq details p{margin-top:10px;color:var(--ink-3);font-size:15px}
+
+/* Shop */
+.page-head{padding:48px 0 28px}
+.page-head h1{font-size:clamp(34px,4.4vw,54px)}
+.shop-bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;margin-bottom:28px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{padding:9px 16px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-weight:600;font-size:14px;cursor:pointer}
+.chip.on{background:var(--ink);border-color:var(--ink);color:#fff}
+.empty{text-align:center;padding:70px 20px;color:var(--muted)}
+.empty h3{color:var(--ink);font-size:26px;margin-bottom:8px}
+
+/* Product page */
+.pd{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;padding:40px 0 20px}
+.pd-media .cv{border-radius:22px;aspect-ratio:4/3.2}
+.thumbs{display:flex;gap:10px;margin-top:12px}
+.thumbs button{width:76px;height:60px;border-radius:10px;overflow:hidden;border:2px solid transparent;cursor:pointer;padding:0;background:var(--paper-2)}
+.thumbs button.on{border-color:var(--ink)}
+.thumbs img,.thumbs svg{width:100%;height:100%;object-fit:cover}
+.pd h1{font-size:clamp(32px,3.8vw,46px);margin:10px 0 14px}
+.pd .price{font-size:30px}
+.vat-note{font-size:13px;color:var(--muted);margin-top:2px}
+.pd-meta{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}
+.pd-meta div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:13px;color:var(--muted)}
+.pd-meta b{display:block;color:var(--ink);font-size:15px}
+.ticks{list-style:none;margin:18px 0}
+.ticks li{padding:7px 0 7px 30px;position:relative;font-size:15px}
+.ticks li:before{content:"";position:absolute;left:0;top:11px;width:18px;height:18px;border-radius:50%;background:var(--sage) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/12px no-repeat}
+.pd-actions{display:flex;gap:12px;margin:24px 0 18px;flex-wrap:wrap}
+.pd-actions .btn{flex:1;min-width:160px}
+.assure{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.tabs{display:flex;gap:6px;border-bottom:1px solid var(--line);margin:40px 0 24px;overflow-x:auto}
+.tabs button{background:none;border:0;padding:12px 18px;font-weight:700;cursor:pointer;border-bottom:2.5px solid transparent;color:var(--muted);white-space:nowrap}
+.tabs button.on{border-color:var(--accent);color:var(--ink)}
+.prose{max-width:760px;color:var(--ink-3);font-size:16px}
+.prose p{margin-bottom:14px}
+.prose h2{font-size:26px;color:var(--ink);margin:30px 0 12px}
+.prose h3{font-size:20px;color:var(--ink);margin:22px 0 8px}
+.prose ul{margin:0 0 14px 20px}
+
+/* Drawer / modal / toast */
+.overlay{position:fixed;inset:0;background:rgba(15,27,45,.45);z-index:80;opacity:0;pointer-events:none;transition:.25s}
+.overlay.open{opacity:1;pointer-events:auto}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(440px,100%);background:var(--paper);z-index:90;transform:translateX(100%);transition:.3s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column}
+.drawer.open{transform:none}
+.drawer-h{display:flex;justify-content:space-between;align-items:center;padding:22px 24px;border-bottom:1px solid var(--line)}
+.drawer-h h3{font-size:24px}
+.drawer-b{flex:1;overflow:auto;padding:16px 24px}
+.drawer-f{padding:20px 24px;border-top:1px solid var(--line);background:#fff}
+.line{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.line .cv{width:84px;flex:none;border-radius:10px;aspect-ratio:4/3}
+.line-i{flex:1;min-width:0}
+.line-i b{display:block;font-size:15px;line-height:1.3}
+.line-i small{color:var(--muted)}
+.link-btn{background:none;border:0;color:var(--muted);font-size:13px;cursor:pointer;text-decoration:underline}
+.link-btn:hover{color:var(--danger)}
+.sum-row{display:flex;justify-content:space-between;padding:6px 0;font-size:15px}
+.sum-row.total{font-size:20px;font-weight:800;border-top:1px solid var(--line);margin-top:8px;padding-top:14px}
+.modal{position:fixed;inset:0;z-index:100;display:none;align-items:flex-start;justify-content:center;padding:5vh 16px;overflow:auto;background:rgba(15,27,45,.5)}
+.modal.open{display:flex}
+.modal-box{background:#fff;border-radius:20px;width:min(760px,100%);box-shadow:0 30px 80px rgba(0,0,0,.3);animation:pop .22s ease}
+.modal-h{display:flex;justify-content:space-between;align-items:center;padding:20px 26px;border-bottom:1px solid var(--line)}
+.modal-h h3{font-size:22px}
+.modal-b{padding:24px 26px}
+.modal-f{padding:16px 26px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;gap:10px;background:#faf8f4;border-radius:0 0 20px 20px}
+@keyframes pop{from{transform:translateY(12px);opacity:0}}
+.toast-wrap{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:200;display:flex;flex-direction:column;gap:8px;align-items:center}
+.toast{background:var(--ink);color:#fff;padding:12px 20px;border-radius:999px;font-size:14px;font-weight:600;box-shadow:var(--shadow);animation:pop .2s}
+.toast.err{background:var(--danger)}
+.cookie{position:fixed;left:20px;bottom:20px;z-index:150;max-width:420px;background:#fff;border-radius:18px;padding:20px;box-shadow:0 20px 60px rgba(15,27,45,.2);font-size:14px}
+.cookie p{margin-bottom:14px;color:var(--ink-3)}
+.spinner{width:28px;height:28px;border:3px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin:60px auto}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* Auth / account / checkout */
+.auth{max-width:460px;margin:50px auto 80px;background:#fff;border-radius:24px;padding:38px;border:1px solid var(--line)}
+.auth h1{font-size:34px;margin-bottom:6px}
+.auth .sub{color:var(--muted);margin-bottom:26px}
+.auth-alt{text-align:center;margin-top:18px;font-size:14px;color:var(--muted)}
+.auth-alt a{color:var(--accent);font-weight:700}
+.co{display:grid;grid-template-columns:1.2fr .8fr;gap:32px;padding:20px 0 80px;align-items:start}
+.panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px}
+.panel h3{font-size:22px;margin-bottom:16px}
+.co .panel.sticky{position:sticky;top:96px}
+.consent{background:var(--paper);border-radius:12px;padding:14px 16px;margin:18px 0}
+.acct{display:grid;grid-template-columns:240px 1fr;gap:28px;padding:10px 0 80px}
+.acct-nav{display:flex;flex-direction:column;gap:4px}
+.acct-nav a{padding:12px 16px;border-radius:12px;font-weight:600}
+.acct-nav a.on,.acct-nav a:hover{background:#fff}
+.dl{display:flex;align-items:center;gap:16px;padding:16px;border:1px solid var(--line);border-radius:14px;margin-bottom:12px;background:#fff}
+.dl .cv{width:96px;border-radius:10px;flex:none}
+.order-card{border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:14px;background:#fff}
+.order-card .oh{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:10px}
+.pill{display:inline-block;font-size:12px;font-weight:800;padding:4px 10px;border-radius:999px;background:var(--paper-2)}
+.pill.Paid,.pill.active,.pill.replied{background:#e2f3ea;color:#16663f}
+.pill.Pending,.pill.Payment.Pending,.pill.Review,.pill.new{background:#fff4dc;color:#8a5a00}
+.pill.Refunded,.pill.Cancelled,.pill.Failed,.pill.blocked{background:#fbe5e1;color:#912d1f}
+.success{max-width:720px;margin:40px auto 80px;text-align:center}
+.success .tick{width:84px;height:84px;border-radius:50%;background:var(--sage);display:grid;place-items:center;margin:0 auto 22px}
+
+/* Footer */
+footer.site{background:var(--ink);color:#c7cfdb;padding:64px 0 28px;margin-top:40px}
+.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px}
+footer h4{color:#fff;font-size:14px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+footer ul{list-style:none}
+footer li{margin-bottom:10px;font-size:14px}
+footer a:hover{color:#fff}
+.foot .logo{color:#fff}
+.foot .logo-mark{background:#fff;color:var(--ink)}
+.foot-bottom{border-top:1px solid #26344a;margin-top:44px;padding-top:22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px}
+.admin-link{display:inline-flex;align-items:center;gap:7px;padding:7px 14px;border:1px solid #3a4a63;border-radius:999px;font-weight:700;font-size:12px;letter-spacing:.04em;color:#c7cfdb;transition:.15s}
+.admin-link:hover{background:#fff;color:var(--ink);border-color:#fff}
+.pay-badges{display:flex;gap:8px;align-items:center}
+.pay-badges span{background:#fff;color:var(--ink);font-weight:800;font-size:12px;padding:5px 10px;border-radius:6px}
+
+/* Admin */
+body.admin-mode .announce,body.admin-mode header.site,body.admin-mode footer.site{display:none}
+body.admin-mode{background:#f3f4f7}
+.adm{display:grid;grid-template-columns:250px 1fr;min-height:100vh}
+.adm-side{background:var(--ink);color:#c7cfdb;padding:22px 16px;position:sticky;top:0;height:100vh;overflow:auto}
+.adm-side .logo{color:#fff;margin:0 8px 28px}
+.adm-side .logo-mark{background:#fff;color:var(--ink)}
+.adm-side a{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:10px;font-weight:600;font-size:14px;margin-bottom:2px}
+.adm-side a:hover{background:#1b2a40;color:#fff}
+.adm-side a.on{background:var(--accent);color:#fff}
+.adm-side svg{width:18px;height:18px;flex:none}
+.adm-side .cnt{margin-left:auto;background:var(--gold);color:var(--ink);font-size:11px;padding:1px 7px;border-radius:9px}
+.adm-main{padding:28px 34px;min-width:0}
+.adm-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px;gap:16px;flex-wrap:wrap}
+.adm-top h1{font-size:30px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:22px}
+.kpi{background:#fff;border-radius:16px;padding:20px;border:1px solid #e6e8ee}
+.kpi small{color:var(--muted);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.kpi b{display:block;font-family:var(--serif);font-size:30px;margin-top:6px}
+.box{background:#fff;border-radius:16px;border:1px solid #e6e8ee;padding:22px;margin-bottom:22px}
+.box h3{font-size:19px;margin-bottom:14px}
+.cols2{display:grid;grid-template-columns:1.6fr 1fr;gap:22px}
+.bars{display:flex;align-items:flex-end;gap:8px;height:200px;padding-top:10px}
+.bar{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;height:100%;justify-content:flex-end}
+.bar i{display:block;width:100%;background:var(--ink);border-radius:6px 6px 2px 2px;min-height:3px;transition:.4s}
+.bar:hover i{background:var(--accent)}
+.bar span{font-size:10px;color:var(--muted);white-space:nowrap}
+table.t{width:100%;border-collapse:collapse;font-size:14px}
+.t th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);padding:10px 12px;border-bottom:1px solid #e6e8ee;white-space:nowrap}
+.t td{padding:12px;border-bottom:1px solid #f0f1f4;vertical-align:middle}
+.t tr:hover td{background:#fafbfc}
+.t .thumb{width:56px;height:42px;border-radius:8px;overflow:hidden;background:var(--paper-2)}
+.t .thumb img,.t .thumb svg{width:100%;height:100%;object-fit:cover}
+.t-wrap{overflow-x:auto}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.toolbar .input{max-width:280px;padding:10px 14px}
+.img-prev{width:100%;aspect-ratio:4/3;border-radius:12px;overflow:hidden;background:var(--paper-2);margin-bottom:10px;border:1px dashed var(--line)}
+.img-prev img,.img-prev svg{width:100%;height:100%;object-fit:cover}
+.grid-form{display:grid;grid-template-columns:1.4fr 1fr;gap:22px}
+.inline{display:flex;gap:8px}
+.adm-login{min-height:100vh;display:grid;place-items:center;background:var(--ink);padding:20px}
+.adm-login .auth{margin:0}
+
+@media (max-width:980px){
+  .hero-grid,.pd,.co,.cols2,.grid-form,.cta-band{grid-template-columns:1fr}
+  .hero-art{height:380px;max-width:480px}
+  .trust-grid,.cats,.kpis{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr 1fr}
+  .acct{grid-template-columns:1fr}
+  .acct-nav{flex-direction:row;overflow-x:auto}
+  .co .panel.sticky{position:static}
+  .adm{grid-template-columns:1fr}
+  .adm-side{position:static;height:auto;display:flex;overflow-x:auto;gap:4px;padding:12px}
+  .adm-side .logo{display:none}
+  .adm-side a{white-space:nowrap}
+  .adm-main{padding:20px 16px}
+}
+@media (max-width:760px){
+  .menu{display:none;position:absolute;top:72px;left:0;right:0;background:var(--paper);flex-direction:column;padding:16px 24px 24px;gap:14px;border-bottom:1px solid var(--line)}
+  .menu.open{display:flex}
+  .burger{display:grid}
+  .row2,.pd-meta{grid-template-columns:1fr}
+  section{padding:52px 0}
+  .cta-band{padding:34px 26px}
+  .foot{grid-template-columns:1fr}
+  .auth{padding:28px 22px}
+  .float-card{width:180px}
+}
+</style>
+</head>
+<body>
+
+<div class="announce" id="announce"></div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a href="#/" class="logo"><span class="logo-mark">H</span><span>HRG INTERNATIONAL<small>DIGITAL STORE · UK</small></span></a>
+    <nav class="menu" id="menu">
+      <a href="#/" data-nav="home">Home</a>
+      <a href="#/shop" data-nav="shop">Shop</a>
+      <a href="#/about" data-nav="about">About</a>
+      <a href="#/faq" data-nav="faq">Help</a>
+      <a href="#/contact" data-nav="contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+      <a class="icon-btn" href="#/account" aria-label="Account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></a>
+      <button class="icon-btn" id="cartBtn" aria-label="Basket"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 7h14l-1.5 12.5a2 2 0 0 1-2 1.5h-7a2 2 0 0 1-2-1.5L5 7z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg><span class="badge hidden" id="cartCount">0</span></button>
+      <button class="icon-btn burger" id="burger" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <div class="search-bar" id="searchBar"><div class="wrap"><form id="searchForm"><input class="input" id="searchInput" placeholder="Search templates, eBooks, design kits…" autocomplete="off"></form></div></div>
+</header>
+
+<main id="app"><div class="spinner"></div></main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a href="#/" class="logo"><span class="logo-mark">H</span><span>HRG INTERNATIONAL</span></a>
+        <p style="margin-top:16px;font-size:14px;max-width:300px" id="footTagline">Premium digital tools for ambitious businesses — designed in Britain, used worldwide.</p>
+        <div class="pay-badges" style="margin-top:20px"><span>PayPal</span><span>VISA</span><span>Mastercard</span><span>AMEX</span></div>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul id="footCats"></ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#/account">My Account</a></li>
+          <li><a href="#/faq">FAQs</a></li>
+          <li><a href="#/refunds">Refunds &amp; Cancellations</a></li>
+          <li><a href="#/terms">Terms &amp; Conditions</a></li>
+          <li><a href="#/privacy">Privacy Policy</a></li>
+          <li><a href="#/cookies">Cookie Policy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li id="footAddress">33 Wilton Avenue<br>Hampton Gardens<br>Peterborough PE7 8RQ<br>United Kingdom</li>
+          <li><a href="tel:+447828591221" id="footPhone">+44 7828 591221</a></li>
+          <li><a href="#/contact" id="footEmail">support@hrg-international.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> HRG International. All rights reserved. <span id="footCompany"></span></span>
+      <span style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">Prices in GBP and include UK VAT where applicable.
+        <a href="#/admin" class="admin-link" title="Admin login"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Admin Login</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Basket">
+  <div class="drawer-h"><h3>Your basket</h3><button class="icon-btn" data-close-drawer aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="drawer-b" id="drawerBody"></div>
+  <div class="drawer-f" id="drawerFoot"></div>
+</aside>
+<div class="modal" id="modal"><div class="modal-box" id="modalBox"></div></div>
+<div class="toast-wrap" id="toasts"></div>
+<div class="cookie hidden" id="cookie">
+  <p><b>We value your privacy.</b> We use essential cookies and local storage to run the basket and your account. We don't use advertising cookies. <a href="#/cookies" style="text-decoration:underline">Cookie policy</a></p>
+  <div class="inline"><button class="btn btn-primary btn-sm" id="cookieOk">Accept</button><button class="btn btn-light btn-sm" id="cookieEss">Essential only</button></div>
+</div>
+
+<script>
+/* =============================================================================
+   CONFIG — paste your Google Apps Script Web App URL here
+   (Apps Script → Deploy → Manage deployments → Web app URL, ends with /exec)
+   While it's left as-is, the site runs in DEMO MODE with sample data.
+============================================================================= */
+const CONFIG = {
+  API_URL: 'https://script.google.com/macros/s/AKfycbwHVWf12QfnZA2NFC3cUcC8IVk1vewQpaKgUUNyEyLxawlD02qSxy3y3VezNyrX4NXa/exec',
+  CURRENCY: 'GBP',
+  LOCALE: 'en-GB'
+};
+const DEMO = !/^https:\/\/script\.google(usercontent)?\.com\//.test(CONFIG.API_URL);
+
+/* ---------------- State ---------------- */
+const LS = {
+  get(k, d){ try{ const v = localStorage.getItem('hrg_'+k); return v ? JSON.parse(v) : d; }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem('hrg_'+k, JSON.stringify(v)); }catch(e){} },
+  del(k){ try{ localStorage.removeItem('hrg_'+k); }catch(e){} }
+};
+const S = {
+  store: null,
+  cart: LS.get('cart', []),
+  token: LS.get('token', null),
+  user: LS.get('user', null),
+  adminToken: LS.get('atoken', null),
+  admin: LS.get('admin', null),
+  coupon: null
+};
+
+/* ---------------- Utils ---------------- */
+const $ = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt = n => new Intl.NumberFormat(CONFIG.LOCALE, {style:'currency', currency: CONFIG.CURRENCY}).format(Number(n)||0);
+const fdate = d => d ? new Date(d).toLocaleDateString('en-GB', {day:'2-digit', month:'short', year:'numeric'}) : '—';
+const fdt = d => d ? new Date(d).toLocaleString('en-GB', {day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit'}) : '—';
+const safeUrl = u => /^https?:\/\//i.test(String(u||'')) ? String(u) : '';
+function toast(msg, err){ const t = document.createElement('div'); t.className = 'toast' + (err?' err':''); t.textContent = msg; $('#toasts').appendChild(t); setTimeout(()=>t.remove(), 3600); }
+function hash(s){ let h=0; for(const c of String(s)) h=(h*31+c.charCodeAt(0))|0; return Math.abs(h); }
+function formData(form){ const o={}; new FormData(form).forEach((v,k)=>o[k]=v); $$('input[type=checkbox]', form).forEach(c=>o[c.name]=c.checked); return o; }
+function setBusy(btn, busy, label){ if(!btn) return; if(busy){ btn.dataset.l = btn.innerHTML; btn.innerHTML = label||'Please wait…'; btn.disabled = true; } else { btn.innerHTML = btn.dataset.l || btn.innerHTML; btn.disabled = false; } }
+function showErr(el, msg){ el.innerHTML = msg ? `<div class="alert alert-err">${esc(msg)}</div>` : ''; }
+function md(text){ // tiny, safe paragraph formatter
+  return String(text||'').split(/\n{2,}/).map(p => `<p>${esc(p).replace(/\n/g,'<br>')}</p>`).join('');
+}
+
+/* ---------------- API ---------------- */
+async function api(action, data={}, opts={}){
+  if(DEMO) return demoApi(action, data);
+  const token = opts.admin ? S.adminToken : S.token;
+  let res;
+  try{
+    res = await fetch(CONFIG.API_URL, { method:'POST', headers:{'Content-Type':'text/plain;charset=utf-8'}, body: JSON.stringify({action, data, token}), redirect:'follow' });
+  }catch(e){ throw new Error('Network error — please check your connection and try again.'); }
+  let j; try{ j = await res.json(); }catch(e){ throw new Error('Unexpected server response. Check the Apps Script deployment.'); }
+  if(!j.ok){
+    if(j.error === 'AUTH'){
+      if(opts.admin){ S.adminToken=null; S.admin=null; LS.del('atoken'); LS.del('admin'); }
+      else { S.token=null; S.user=null; LS.del('token'); LS.del('user'); }
+      throw Object.assign(new Error('Your session has expired. Please sign in again.'), {auth:true});
+    }
+    throw new Error(j.error || 'Something went wrong.');
+  }
+  return j.data;
+}
+
+/* ---------------- Demo data (used until API_URL is set) ---------------- */
+const DEMO_STORE = {
+  settings:{storeName:'HRG International',tagline:'Premium digital tools for ambitious businesses',supportEmail:'support@hrg-international.com',phone:'+44 7828 591221',address:'33 Wilton Avenue, Hampton Gardens, Peterborough PE7 8RQ, United Kingdom',currency:'GBP',vatRate:'20',paypal:{enabled:false,mode:'sandbox',clientId:'',color:'gold',shape:'pill',label:'pay',height:48,card:true,payLater:false},announcement:'Launch offer: use code WELCOME10 for 10% off your first order',companyNumber:'',vatNumber:''},
+  categories:[
+    {id:'CAT1',name:'Business Templates',slug:'business-templates',description:'Spreadsheets, trackers and finance tools'},
+    {id:'CAT2',name:'Design Assets',slug:'design-assets',description:'Brand kits, social templates and graphics'},
+    {id:'CAT3',name:'eBooks & Guides',slug:'ebooks-and-guides',description:'Practical playbooks written by practitioners'},
+    {id:'CAT4',name:'Planners',slug:'planners',description:'Digital planners and productivity systems'}],
+  products:[
+    {id:'P1001',categoryId:'CAT1',slug:'uk-small-business-finance-toolkit',name:'UK Small Business Finance Toolkit',price:29,compareAtPrice:49,featured:true,fileFormat:'Excel + Google Sheets',fileSize:'4.2 MB',shortDescription:'12 ready-to-use spreadsheets for cash flow, VAT, invoicing and profit tracking.',description:'Run your numbers like a finance team, without hiring one. This toolkit bundles twelve professionally built spreadsheets designed around UK small-business needs — from a 13-week cash-flow forecast to a VAT quarter tracker aligned with Making Tax Digital record-keeping.\n\nEvery template is unlocked, fully editable and works in both Microsoft Excel and Google Sheets.',features:['13-week cash-flow forecast','VAT quarter tracker (MTD-friendly layout)','Branded invoice & quote templates','Profit & loss dashboard with charts','Expense and mileage logs','Lifetime updates'],tags:['finance','excel'],gallery:[],imageUrl:'',salesCount:0},
+    {id:'P1002',categoryId:'CAT2',slug:'brand-identity-starter-kit',name:'Brand Identity Starter Kit',price:39,compareAtPrice:59,featured:true,fileFormat:'Figma + Canva + PDF',fileSize:'86 MB',shortDescription:'Logo grid, colour system, type pairings and 60 social templates to launch a polished brand.',description:'Everything a new brand needs to look established from day one. Build your logo on a proven grid, choose from curated colour and type systems, and publish consistently with 60 editable social templates.\n\nIncludes a 24-page brand guidelines template you can hand to designers and agencies.',features:['Logo construction grid & lock-ups','10 colour palettes with accessibility notes','8 font pairings (free Google Fonts)','60 Instagram & LinkedIn templates','24-page brand guidelines template','Commercial licence'],tags:['branding'],gallery:[],imageUrl:'',salesCount:0},
+    {id:'P1003',categoryId:'CAT3',slug:'the-growth-marketing-playbook',name:'The Growth Marketing Playbook',price:19,compareAtPrice:0,featured:true,fileFormat:'PDF eBook · 180 pages',fileSize:'12 MB',shortDescription:'A practical, step-by-step guide to acquiring and retaining customers on a lean budget.',description:'A field guide for founders and marketers who need results without a big budget. Learn how to find your first 1,000 customers, build a content engine, run paid campaigns that pay back, and turn customers into advocates.\n\nEach chapter ends with worksheets and checklists so you can apply it the same day.',features:['180 pages across 12 chapters','40+ worksheets and checklists','Campaign planning templates','Email sequence swipe file','Read on any device'],tags:['marketing'],gallery:[],imageUrl:'',salesCount:0},
+    {id:'P1004',categoryId:'CAT4',slug:'ultimate-productivity-planner-2027',name:'Ultimate Productivity Planner 2027',price:15,compareAtPrice:22,featured:false,fileFormat:'Notion + Printable PDF',fileSize:'18 MB',shortDescription:'A goal-to-task planning system for Notion, plus a beautiful printable edition.',description:'Turn yearly goals into weekly wins. The planner connects annual objectives, quarterly projects and daily tasks in one Notion workspace, with a matching printable PDF for people who like pen and paper.\n\nUK bank holidays for 2027 are pre-filled.',features:['Notion template (duplicate in one click)','365-day printable PDF (A4 & A5)','Goal, habit and project trackers','Weekly review prompts','UK bank holidays pre-filled'],tags:['planner'],gallery:[],imageUrl:'',salesCount:0}]
+};
+async function demoApi(action, data){
+  await new Promise(r=>setTimeout(r,150));
+  if(action==='getStore') return JSON.parse(JSON.stringify(DEMO_STORE));
+  if(action==='validateCoupon'){
+    const sub = (data.productIds||[]).reduce((s,id)=>s+(DEMO_STORE.products.find(p=>p.id===id)?.price||0),0);
+    if(String(data.code).toUpperCase()!=='WELCOME10') throw new Error('This discount code is not valid.');
+    const disc = Math.round(sub*10)/100, total = sub-disc; return {code:'WELCOME10',discount:disc,subtotal:sub,total,vat:Math.round((total-total/1.2)*100)/100};
+  }
+  throw new Error('Demo mode: set CONFIG.API_URL in index.html to your Apps Script Web App URL to enable accounts, checkout and the admin panel.');
+}
+
+/* ---------------- Product cover art (used when no image uploaded) ---------------- */
+const PAL = [['#0f1b2d','#d9572b','#f7f3ec'],['#1f6f5c','#e9b949','#f7f3ec'],['#3b2a5c','#ff8a65','#ffffff'],['#7a2e1f','#f7d9a8','#ffffff'],['#12355b','#7fd1c7','#ffffff'],['#2d2a26','#e9b949','#f7f3ec']];
+function wrapText(t, n){ const w = String(t).split(/\s+/), out=[]; let l=''; w.forEach(x=>{ if((l+' '+x).trim().length>n){ if(l) out.push(l); l=x; } else l=(l+' '+x).trim(); }); if(l) out.push(l); return out; }
+function coverSvg(p){
+  const [bg, ac, fg] = PAL[hash(p.id||p.name) % PAL.length];
+  const lines = wrapText(p.name, 16).slice(0,3);
+  const v = hash(p.name) % 3;
+  const deco = v===0 ? `<circle cx="340" cy="60" r="110" fill="${ac}" opacity=".95"/><circle cx="340" cy="60" r="60" fill="${bg}" opacity=".25"/>`
+    : v===1 ? `<rect x="250" y="-40" width="200" height="200" rx="40" transform="rotate(25 350 60)" fill="${ac}"/><rect x="300" y="200" width="120" height="120" rx="24" fill="${fg}" opacity=".08"/>`
+    : `<path d="M260 0h140v140c-77 0-140-63-140-140z" fill="${ac}"/><circle cx="60" cy="270" r="70" fill="${fg}" opacity=".07"/>`;
+  const fmtLabel = esc(String(p.fileFormat||'Digital').toUpperCase().slice(0,30));
+  return `<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc(p.name)}"><rect width="400" height="300" fill="${bg}"/>${deco}
+    <g stroke="${fg}" stroke-opacity=".08">${[...Array(8)].map((_,i)=>`<line x1="0" y1="${40+i*34}" x2="400" y2="${40+i*34}"/>`).join('')}</g>
+    <text x="28" y="44" fill="${fg}" font-family="Manrope,Arial" font-size="11" font-weight="800" letter-spacing="2" opacity=".8">${fmtLabel}</text>
+    ${lines.map((l,i)=>`<text x="28" y="${178 - (lines.length-1)*34 + i*38}" fill="${fg}" font-family="Fraunces,Georgia,serif" font-size="32" font-weight="600">${esc(l)}</text>`).join('')}
+    <rect x="28" y="236" width="44" height="4" rx="2" fill="${ac}"/>
+    <text x="28" y="268" fill="${fg}" font-family="Manrope,Arial" font-size="11" font-weight="700" letter-spacing="3" opacity=".7">HRG INTERNATIONAL</text></svg>`;
+}
+const cover = (p, url) => { const u = safeUrl(url ?? p.imageUrl); return u ? `<img src="${esc(u)}" alt="${esc(p.name)}" loading="lazy" referrerpolicy="no-referrer">` : coverSvg(p); };
+
+/* ---------------- Store helpers ---------------- */
+const products = () => S.store?.products || [];
+const cats = () => S.store?.categories || [];
+const catById = id => cats().find(c=>c.id===id);
+const prodById = id => products().find(p=>p.id===id);
+
+function saveCart(){ S.cart = S.cart.filter(id=>prodById(id)); LS.set('cart', S.cart); updateCartBadge(); renderDrawer(); }
+function addToCart(id, open=true){
+  if(!prodById(id)) return;
+  if(S.cart.includes(id)){ toast('Already in your basket'); }
+  else { S.cart.push(id); toast('Added to basket'); }
+  saveCart(); if(open) openDrawer();
+}
+function removeFromCart(id){ S.cart = S.cart.filter(x=>x!==id); S.coupon=null; saveCart(); if(location.hash.startsWith('#/checkout') || location.hash.startsWith('#/cart')) route(); }
+function cartTotals(){
+  const items = S.cart.map(prodById).filter(Boolean);
+  const subtotal = items.reduce((s,p)=>s+Number(p.price),0);
+  const discount = S.coupon ? Math.min(S.coupon.discount, subtotal) : 0;
+  const total = Math.max(0, subtotal - discount);
+  const rate = Number(S.store?.settings?.vatRate || 20);
+  return { items, subtotal, discount, total, vat: total - total/(1+rate/100), rate };
+}
+function updateCartBadge(){ const b=$('#cartCount'); b.textContent = S.cart.length; b.classList.toggle('hidden', !S.cart.length); }
+
+/* ---------------- Drawer / modal ---------------- */
+function openDrawer(){ renderDrawer(); $('#drawer').classList.add('open'); $('#overlay').classList.add('open'); }
+function closeDrawer(){ $('#drawer').classList.remove('open'); $('#overlay').classList.remove('open'); }
+function renderDrawer(){
+  const t = cartTotals();
+  $('#drawerBody').innerHTML = t.items.length ? t.items.map(p=>`
+    <div class="line"><a class="cv" href="#/product/${esc(p.slug)}">${cover(p)}</a>
+      <div class="line-i"><b>${esc(p.name)}</b><small>${esc(p.fileFormat||'Digital download')}</small><br><button class="link-btn" data-remove="${esc(p.id)}">Remove</button></div>
+      <div class="price" style="font-size:16px">${fmt(p.price)}</div></div>`).join('')
+    : `<div class="empty"><h3>Your basket is empty</h3><p>Browse our digital products and start creating.</p><a href="#/shop" class="btn btn-primary" style="margin-top:18px" data-close-drawer>Shop now</a></div>`;
+  $('#drawerFoot').innerHTML = t.items.length ? `
+    <div class="sum-row"><span>Subtotal</span><b>${fmt(t.subtotal)}</b></div>
+    <p class="muted" style="font-size:13px;margin:4px 0 14px">Prices include VAT. Discount codes can be applied at checkout.</p>
+    <a href="#/checkout" class="btn btn-accent btn-block" data-close-drawer>Secure checkout</a>
+    <a href="#/shop" class="btn btn-light btn-block" style="margin-top:8px" data-close-drawer>Continue shopping</a>` : '';
+}
+function openModal(html){ $('#modalBox').innerHTML = html; $('#modal').classList.add('open'); document.body.style.overflow='hidden'; }
+function closeModal(){ $('#modal').classList.remove('open'); document.body.style.overflow=''; }
+function confirmBox(msg){ return new Promise(res=>{
+  openModal(`<div class="modal-h"><h3>Please confirm</h3></div><div class="modal-b"><p>${esc(msg)}</p></div><div class="modal-f"><button class="btn btn-light" id="cNo">Cancel</button><button class="btn btn-accent" id="cYes">Confirm</button></div>`);
+  $('#cNo').onclick=()=>{closeModal();res(false)}; $('#cYes').onclick=()=>{closeModal();res(true)};
+});}
+
+/* ---------------- Router ---------------- */
+const app = $('#app');
+function setNav(key){ $$('#menu a').forEach(a=>a.classList.toggle('active', a.dataset.nav===key)); }
+function setTitle(t){ document.title = (t ? t + ' — ' : '') + (S.store?.settings?.storeName || 'HRG International'); }
+
+async function route(){
+  const h = location.hash.replace(/^#\/?/, '');
+  const [path, query=''] = h.split('?');
+  const parts = path.split('/').filter(Boolean);
+  const q = Object.fromEntries(new URLSearchParams(query));
+  $('#menu').classList.remove('open');
+  const isAdmin = parts[0]==='admin';
+  document.body.classList.toggle('admin-mode', isAdmin);
+  if(!isAdmin) window.scrollTo({top:0});
+  try{
+    switch(parts[0]){
+      case undefined: return viewHome();
+      case 'shop': return viewShop(parts[1], q);
+      case 'product': return viewProduct(parts[1]);
+      case 'cart': return viewCart();
+      case 'checkout': return viewCheckout();
+      case 'order': return viewOrderSuccess(parts[1]);
+      case 'login': return viewLogin(q);
+      case 'signup': return viewSignup(q);
+      case 'forgot': return viewForgot();
+      case 'account': return viewAccount(parts[1]||'downloads');
+      case 'about': return viewAbout();
+      case 'contact': return viewContact();
+      case 'faq': return viewFaq();
+      case 'privacy': case 'terms': case 'refunds': case 'cookies': return viewLegal(parts[0]);
+      case 'admin': return viewAdmin(parts[1]||'dashboard');
+      default: return view404();
+    }
+  }catch(e){ console.error(e); app.innerHTML = `<div class="wrap empty"><h3>Something went wrong</h3><p>${esc(e.message)}</p></div>`; }
+}
+
+/* ---------------- Views: Home ---------------- */
+function productCard(p){
+  const c = catById(p.categoryId);
+  const sale = p.compareAtPrice > p.price ? Math.round((1 - p.price/p.compareAtPrice)*100) : 0;
+  return `<article class="card">
+    <a class="cv" href="#/product/${esc(p.slug)}">${cover(p)}${p.featured?'<span class="tag">BESTSELLER</span>':''}${sale?`<span class="tag sale">−${sale}%</span>`:''}</a>
+    <div class="card-b">
+      <span class="card-cat">${esc(c?.name||'Digital')}</span>
+      <h3><a href="#/product/${esc(p.slug)}">${esc(p.name)}</a></h3>
+      <p>${esc(p.shortDescription)}</p>
+      <div class="card-f"><span class="price">${fmt(p.price)}${sale?`<s>${fmt(p.compareAtPrice)}</s>`:''}</span>
+        <button class="btn btn-primary btn-sm" data-add="${esc(p.id)}">Add to basket</button></div>
+    </div></article>`;
+}
+
+function viewHome(){
+  setNav('home'); setTitle('Premium Digital Products');
+  const ps = products();
+  const featured = ps.filter(p=>p.featured).concat(ps.filter(p=>!p.featured)).slice(0,4);
+  const hero = ps.slice(0,3);
+  const catColors = ['#0f1b2d','#1f6f5c','#d9572b','#3b2a5c','#7a2e1f','#12355b'];
+  app.innerHTML = `
+  <section class="hero"><div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Instant digital downloads · Made in the UK</span>
+      <h1>Tools that make small teams look <em>world-class.</em></h1>
+      <p class="lead">Professionally crafted templates, design kits, eBooks and planners — download instantly and put them to work today.</p>
+      <div class="hero-cta"><a href="#/shop" class="btn btn-accent">Explore the store</a><a href="#/about" class="btn btn-ghost">Why HRG</a></div>
+      <div class="hero-meta"><div><b>Instant</b>access after payment</div><div><b>Lifetime</b>re-downloads</div><div><b>Secure</b>PayPal checkout</div></div>
+    </div>
+    <div class="hero-art"><div class="blob"></div>
+      ${hero.map(p=>`<a class="float-card" href="#/product/${esc(p.slug)}"><div class="cv">${cover(p)}</div><div class="fc-b"><span>${esc(p.name.split(' ').slice(0,3).join(' '))}</span><span>${fmt(p.price)}</span></div></a>`).join('')}
+    </div>
+  </div></section>
+
+  <div class="trust"><div class="wrap trust-grid">
+    ${[['⚡','Instant download','Files delivered the moment you pay'],['🔒','Secure checkout','PayPal, debit & credit cards'],['🇬🇧','UK business','VAT-inclusive pricing in GBP'],['💬','Real support','Reply within one working day']]
+      .map(([i,t,d])=>`<div class="trust-item"><span class="ti">${i}</span><div><b>${t}</b><span class="muted">${d}</span></div></div>`).join('')}
+  </div></div>
+
+  <section><div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Featured</span><h2>Our most-loved products</h2></div><a href="#/shop" class="btn btn-light">View all products →</a></div>
+    <div class="grid">${featured.map(productCard).join('')}</div>
+  </div></section>
+
+  <section style="padding-top:0"><div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">Browse</span><h2>Shop by category</h2></div></div>
+    <div class="cats">${cats().map((c,i)=>`<a class="cat" href="#/shop/${esc(c.slug)}" style="background:${catColors[i%catColors.length]}">
+      <div><h3>${esc(c.name)}</h3><p>${esc(c.description||'')}</p></div><span>${products().filter(p=>p.categoryId===c.id).length} products →</span></a>`).join('')}</div>
+  </div></section>
+
+  <section class="dark"><div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">How it works</span><h2>From checkout to working in minutes</h2></div></div>
+    <div class="steps">
+      <div class="step" style="background:#16243a;border-color:#26344a"><span class="eyebrow">Choose</span><h3>Pick your tools</h3><p class="muted">Browse by category and preview what's inside every product.</p></div>
+      <div class="step" style="background:#16243a;border-color:#26344a"><span class="eyebrow">Pay</span><h3>Check out securely</h3><p class="muted">Pay with PayPal or any major card. No PayPal account needed for cards.</p></div>
+      <div class="step" style="background:#16243a;border-color:#26344a"><span class="eyebrow">Download</span><h3>Get instant access</h3><p class="muted">Download straight away, plus an email copy and lifetime access in your account.</p></div>
+    </div>
+  </div></section>
+
+  <section><div class="wrap"><div class="cta-band">
+    <div><span class="eyebrow" style="color:var(--gold)">Launch offer</span><h2 style="margin:10px 0">10% off your first order</h2><p style="color:#c7cfdb">Use code <b style="color:#fff">WELCOME10</b> at checkout. Create a free account to keep all your downloads in one place.</p></div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end"><a href="#/signup" class="btn btn-accent">Create free account</a><a href="#/shop" class="btn" style="background:#fff;color:var(--ink)">Shop now</a></div>
+  </div></div></section>`;
+}
+
+/* ---------------- Views: Shop ---------------- */
+function viewShop(catSlug, q){
+  setNav('shop');
+  const cat = cats().find(c=>c.slug===catSlug);
+  const term = (q.q||'').toLowerCase();
+  const sort = q.sort || 'featured';
+  let list = products().filter(p => (!cat || p.categoryId===cat.id) &&
+    (!term || (p.name+' '+p.shortDescription+' '+(p.tags||[]).join(' ')).toLowerCase().includes(term)));
+  const sorters = { featured:(a,b)=>(b.featured-a.featured)||(b.salesCount-a.salesCount), low:(a,b)=>a.price-b.price, high:(a,b)=>b.price-a.price, new:(a,b)=>String(b.createdAt||'').localeCompare(String(a.createdAt||'')), name:(a,b)=>a.name.localeCompare(b.name) };
+  list.sort(sorters[sort]||sorters.featured);
+  setTitle(cat ? cat.name : 'Shop');
+  app.innerHTML = `<div class="wrap">
+    <div class="page-head"><span class="eyebrow">${term?'Search results':'The store'}</span><h1>${term?`“${esc(q.q)}”`:esc(cat?cat.name:'All digital products')}</h1>
+      <p class="muted" style="margin-top:8px">${esc(cat?.description || 'Instant downloads. Lifetime access. VAT-inclusive prices.')}</p></div>
+    <div class="shop-bar">
+      <div class="chips"><a class="chip ${!cat?'on':''}" href="#/shop">All</a>${cats().map(c=>`<a class="chip ${cat?.id===c.id?'on':''}" href="#/shop/${esc(c.slug)}">${esc(c.name)}</a>`).join('')}</div>
+      <select class="input" id="sortSel" style="max-width:210px">
+        ${[['featured','Featured'],['new','Newest'],['low','Price: low to high'],['high','Price: high to low'],['name','Name A–Z']].map(([v,l])=>`<option value="${v}" ${v===sort?'selected':''}>${l}</option>`).join('')}
+      </select>
+    </div>
+    ${list.length ? `<div class="grid" style="margin-bottom:80px">${list.map(productCard).join('')}</div>` : `<div class="empty"><h3>No products found</h3><p>Try another category or search term.</p></div>`}
+  </div>`;
+  $('#sortSel').onchange = e => { const p = new URLSearchParams(q); p.set('sort', e.target.value); location.hash = `#/shop${cat?'/'+cat.slug:''}?${p}`; };
+}
+
+/* ---------------- Views: Product ---------------- */
+function viewProduct(slug){
+  setNav('shop');
+  const p = products().find(x=>x.slug===slug);
+  if(!p) return view404();
+  setTitle(p.name);
+  const c = catById(p.categoryId);
+  const imgs = [p.imageUrl, ...(p.gallery||[])].map(safeUrl).filter(Boolean);
+  const media = imgs.length ? imgs : [''];
+  const sale = p.compareAtPrice > p.price;
+  const related = products().filter(x=>x.id!==p.id && x.categoryId===p.categoryId).concat(products().filter(x=>x.id!==p.id && x.categoryId!==p.categoryId)).slice(0,3);
+  const inCart = S.cart.includes(p.id);
+  app.innerHTML = `<div class="wrap">
+    <p style="padding-top:26px;font-size:14px" class="muted"><a href="#/shop">Shop</a> / ${c?`<a href="#/shop/${esc(c.slug)}">${esc(c.name)}</a> / `:''}${esc(p.name)}</p>
+    <div class="pd">
+      <div class="pd-media"><div class="cv" id="mainImg">${cover(p, media[0])}</div>
+        ${media.length>1?`<div class="thumbs">${media.map((u,i)=>`<button class="${i?'':'on'}" data-img="${i}">${cover(p,u)}</button>`).join('')}</div>`:''}</div>
+      <div>
+        <span class="card-cat">${esc(c?.name||'Digital product')}</span>
+        <h1>${esc(p.name)}</h1>
+        <p style="font-size:17px;color:var(--ink-3)">${esc(p.shortDescription)}</p>
+        <div style="margin-top:20px"><span class="price">${fmt(p.price)}${sale?`<s>${fmt(p.compareAtPrice)}</s>`:''}</span><div class="vat-note">Includes VAT · one-time payment · instant download</div></div>
+        <div class="pd-meta"><div>Format<b>${esc(p.fileFormat||'Digital download')}</b></div><div>File size<b>${esc(p.fileSize||'—')}</b></div></div>
+        ${p.features?.length?`<ul class="ticks">${p.features.slice(0,6).map(f=>`<li>${esc(f)}</li>`).join('')}</ul>`:''}
+        <div class="pd-actions"><button class="btn btn-primary" data-add="${esc(p.id)}">${inCart?'In your basket ✓':'Add to basket'}</button><button class="btn btn-accent" id="buyNow">Buy now</button></div>
+        <div class="assure"><span>🔒 Secure PayPal checkout</span><span>⚡ Instant access</span><span>♾️ Lifetime re-downloads</span></div>
+      </div>
+    </div>
+    <div class="tabs"><button class="on" data-tab="desc">Description</button><button data-tab="inc">What's included</button><button data-tab="lic">Licence &amp; delivery</button></div>
+    <div class="prose" id="tabBody"></div>
+    ${related.length?`<section style="padding-bottom:30px"><div class="sec-head"><h2>You may also like</h2></div><div class="grid">${related.map(productCard).join('')}</div></section>`:''}
+  </div>`;
+  const tabs = {
+    desc: md(p.description),
+    inc: p.features?.length ? `<ul class="ticks">${p.features.map(f=>`<li>${esc(f)}</li>`).join('')}</ul>` : '<p>Full details are included in the download.</p>',
+    lic: `<p><b>Delivery:</b> this is a digital product. Your download links appear immediately after payment, are emailed to you, and stay available in <a href="#/account/downloads" style="text-decoration:underline">My Account → Downloads</a>.</p>
+          <p><b>Licence:</b> a single-business licence for use in your own and your clients' projects. You may not resell or redistribute the source files.</p>
+          <p><b>Cancellation:</b> because digital content is supplied immediately, you'll be asked to consent to immediate access at checkout, which ends the 14-day cancellation period under the Consumer Contracts Regulations 2013. If a file is faulty, we'll fix or refund it — see our <a href="#/refunds" style="text-decoration:underline">refund policy</a>.</p>`
+  };
+  $('#tabBody').innerHTML = tabs.desc;
+  $$('[data-tab]').forEach(b=>b.onclick=()=>{ $$('[data-tab]').forEach(x=>x.classList.remove('on')); b.classList.add('on'); $('#tabBody').innerHTML = tabs[b.dataset.tab]; });
+  $$('[data-img]').forEach(b=>b.onclick=()=>{ $$('[data-img]').forEach(x=>x.classList.remove('on')); b.classList.add('on'); $('#mainImg').innerHTML = cover(p, media[+b.dataset.img]); });
+  $('#buyNow').onclick = ()=>{ if(!S.cart.includes(p.id)){ S.cart.push(p.id); saveCart(); } location.hash = '#/checkout'; };
+}
+
+/* ---------------- Views: Cart & Checkout ---------------- */
+function summaryHtml(t){
+  return `${t.items.map(p=>`<div class="line"><div class="cv">${cover(p)}</div><div class="line-i"><b>${esc(p.name)}</b><small>${esc(p.fileFormat||'')}</small><br><button class="link-btn" data-remove="${esc(p.id)}">Remove</button></div><b>${fmt(p.price)}</b></div>`).join('')}
+    <div style="margin-top:14px">
+      <div class="sum-row"><span>Subtotal</span><span>${fmt(t.subtotal)}</span></div>
+      ${t.discount?`<div class="sum-row" style="color:var(--ok)"><span>Discount (${esc(S.coupon.code)})</span><span>−${fmt(t.discount)}</span></div>`:''}
+      <div class="sum-row total"><span>Total</span><span>${fmt(t.total)}</span></div>
+      <p class="muted" style="font-size:13px;text-align:right">Includes VAT (${t.rate}%) of ${fmt(t.vat)}</p>
+    </div>`;
+}
+function viewCart(){
+  setTitle('Basket'); setNav('');
+  const t = cartTotals();
+  app.innerHTML = `<div class="wrap"><div class="page-head"><h1>Your basket</h1></div>
+    ${t.items.length ? `<div class="co"><div class="panel">${summaryHtml(t)}</div><div class="panel"><h3>Ready?</h3><p class="muted" style="margin-bottom:18px">Apply discount codes and pay securely on the next step.</p><a class="btn btn-accent btn-block" href="#/checkout">Proceed to checkout</a></div></div>`
+    : `<div class="empty"><h3>Your basket is empty</h3><a href="#/shop" class="btn btn-primary" style="margin-top:16px">Browse products</a></div>`}</div>`;
+}
+
+let paypalLoading = null, paypalLoadedKey = '';
+function paypalSdkUrl(cfg, clientId){
+  const enable = [], disable = ['venmo'];
+  (cfg.card ? enable : disable).push('card');
+  (cfg.payLater ? enable : disable).push('paylater');
+  return `https://www.paypal.com/sdk/js?client-id=${encodeURIComponent(clientId)}&currency=${CONFIG.CURRENCY}&intent=capture&components=buttons&locale=en_GB`
+    + (enable.length ? `&enable-funding=${enable.join(',')}` : '') + `&disable-funding=${disable.join(',')}`;
+}
+function loadPaypal(cfg, clientId){
+  const url = paypalSdkUrl(cfg, clientId || cfg.clientId);
+  if(window.paypal && paypalLoadedKey === url) return Promise.resolve();
+  if(paypalLoading && paypalLoadedKey === url) return paypalLoading;
+  $$('script[data-pp-sdk]').forEach(x=>x.remove()); try{ delete window.paypal; }catch(e){ window.paypal = undefined; }
+  paypalLoadedKey = url;
+  paypalLoading = new Promise((res, rej)=>{
+    const s = document.createElement('script');
+    s.src = url; s.dataset.ppSdk = '1';
+    s.onload = res; s.onerror = ()=>{ paypalLoading=null; paypalLoadedKey=''; rej(new Error('Could not load PayPal. Please disable any ad-blocker and refresh.')); };
+    document.head.appendChild(s);
+  });
+  return paypalLoading;
+}
+const ppStyle = cfg => ({ layout:'vertical', shape: cfg.shape==='sharp'?'sharp':cfg.shape||'pill', color: cfg.color||'gold', label: cfg.label||'pay', height: Math.min(55, Math.max(25, Number(cfg.height)||48)) });
+
+async function viewCheckout(){
+  setTitle('Checkout'); setNav('');
+  const t = cartTotals();
+  if(!t.items.length){ app.innerHTML = `<div class="wrap empty"><h3>Your basket is empty</h3><a href="#/shop" class="btn btn-primary" style="margin-top:16px">Browse products</a></div>`; return; }
+  if(!S.token){
+    app.innerHTML = `<div class="wrap"><div class="auth" style="text-align:center"><h1>Almost there</h1><p class="sub">Sign in or create a free account so your downloads are saved safely and you can access them any time.</p>
+      <a class="btn btn-primary btn-block" href="#/login?next=checkout">Sign in</a><a class="btn btn-light btn-block" style="margin-top:10px" href="#/signup?next=checkout">Create account</a></div></div>`;
+    return;
+  }
+  app.innerHTML = `<div class="wrap"><div class="page-head" style="padding-bottom:18px"><span class="eyebrow">Secure checkout</span><h1>Checkout</h1></div>
+  <div class="co">
+    <div>
+      <div class="panel" style="margin-bottom:20px"><h3>Your details</h3>
+        <p><b>${esc(S.user.firstName)} ${esc(S.user.lastName)}</b><br><span class="muted">${esc(S.user.email)}</span></p>
+        <p class="muted" style="font-size:13px;margin-top:8px">Your receipt and download links will be sent to this email. Not you? <a href="#" id="switchAcct" style="text-decoration:underline">Switch account</a></p>
+      </div>
+      <div class="panel"><h3>Payment</h3>
+        <div id="coErr"></div>
+        <label class="consent check"><input type="checkbox" id="consent"><span>I want immediate access to my digital content and I acknowledge that I will <b>lose my 14-day right to cancel</b> once the download is made available. I agree to the <a href="#/terms" target="_blank" style="text-decoration:underline">Terms &amp; Conditions</a>.</span></label>
+        <div id="payArea"><div class="spinner" style="margin:24px auto"></div></div>
+        <p class="muted" style="font-size:13px;margin-top:14px;text-align:center">🔒 Payments are processed securely by PayPal. We never see or store your card details.</p>
+      </div>
+    </div>
+    <div class="panel sticky"><h3>Order summary</h3>
+      <div id="sumBox">${summaryHtml(t)}</div>
+      <form id="couponForm" class="inline" style="margin-top:14px"><input class="input" name="code" placeholder="Discount code" value="${esc(S.coupon?.code||'')}" style="text-transform:uppercase"><button class="btn btn-light">Apply</button></form>
+      <div id="couponMsg" style="margin-top:8px;font-size:13px"></div>
+    </div>
+  </div></div>`;
+  $('#switchAcct').onclick = e => { e.preventDefault(); logout('#/login?next=checkout'); };
+  $('#couponForm').onsubmit = async e => {
+    e.preventDefault();
+    const code = e.target.code.value.trim();
+    const btn = e.target.querySelector('button'); setBusy(btn, true, '…');
+    try{
+      if(!code){ S.coupon = null; }
+      else { const r = await api('validateCoupon', {code, productIds: S.cart}); S.coupon = {code:r.code, discount:r.discount}; }
+      $('#sumBox').innerHTML = summaryHtml(cartTotals());
+      $('#couponMsg').innerHTML = S.coupon ? `<span style="color:var(--ok)">✓ Code applied — you save ${fmt(S.coupon.discount)}</span>` : '';
+      renderPayButtons();
+    }catch(err){ S.coupon=null; $('#sumBox').innerHTML = summaryHtml(cartTotals()); $('#couponMsg').innerHTML = `<span style="color:var(--danger)">${esc(err.message)}</span>`; }
+    setBusy(btn, false);
+  };
+  renderPayButtons();
+}
+
+async function renderPayButtons(){
+  const area = $('#payArea'); if(!area) return;
+  const errBox = $('#coErr');
+  const t = cartTotals();
+  const consentOk = () => { const ok = $('#consent').checked; if(!ok) showErr(errBox, 'Please tick the box above to confirm immediate access to your digital content.'); else showErr(errBox, ''); return ok; };
+  if(t.total <= 0){
+    area.innerHTML = `<button class="btn btn-accent btn-block" id="freeBtn">Complete free order</button>`;
+    $('#freeBtn').onclick = async e => { if(!consentOk()) return; setBusy(e.target, true);
+      try{ const r = await api('createPaypalOrder', {productIds:S.cart, couponCode:S.coupon?.code||'', consent:true}); orderDone(r.orderId); }
+      catch(err){ showErr(errBox, err.message); setBusy(e.target,false); if(err.auth) location.hash='#/login?next=checkout'; } };
+    return;
+  }
+  const pp = S.store?.settings?.paypal || {};
+  if(DEMO || !pp.enabled || !pp.clientId){
+    area.innerHTML = `<div class="alert alert-info">${DEMO ? 'Demo mode — connect the Apps Script backend to enable payments.' : 'Online payments are temporarily unavailable. Please <a href="#/contact" style="text-decoration:underline">contact us</a> to complete your order.'}</div>`;
+    return;
+  }
+  try{ await loadPaypal(pp); }catch(e){ area.innerHTML = `<div class="alert alert-err">${esc(e.message)}</div>`; return; }
+  area.innerHTML = (pp.mode==='sandbox' ? '<div class="alert alert-info" style="font-size:13px">🧪 Test mode — use a PayPal sandbox account. No real money will be taken.</div>' : '') + '<div id="ppButtons"></div>';
+  let ppOrder = null;
+  paypal.Buttons({
+    style: ppStyle(pp),
+    onClick: (data, actions) => consentOk() ? actions.resolve() : actions.reject(),
+    createOrder: async () => {
+      try{
+        const r = await api('createPaypalOrder', {productIds:S.cart, couponCode:S.coupon?.code||'', consent:true});
+        if(r.free){ orderDone(r.orderId); throw new Error('free'); }
+        ppOrder = r; return r.paypalOrderId;
+      }catch(err){ if(err.message!=='free'){ showErr(errBox, err.message); if(err.auth) location.hash='#/login?next=checkout'; } throw err; }
+    },
+    onApprove: async (data) => {
+      area.innerHTML = '<div class="spinner" style="margin:24px auto"></div><p class="muted" style="text-align:center">Confirming your payment…</p>';
+      try{ const r = await api('capturePaypalOrder', {paypalOrderId: data.orderID}); orderDone(r.orderId); }
+      catch(err){ showErr(errBox, err.message); renderPayButtons(); }
+    },
+    onCancel: (data) => { api('cancelPaypalOrder', {paypalOrderId: data.orderID}).catch(()=>{}); toast('Payment cancelled — your basket is saved.'); },
+    onError: (err) => { console.error(err); if(!$('#coErr .alert')) showErr(errBox, 'PayPal could not process the payment. Please try again.'); }
+  }).render('#ppButtons');
+}
+
+function orderDone(orderId){ S.cart = []; S.coupon = null; saveCart(); location.hash = '#/order/' + encodeURIComponent(orderId); }
+
+async function viewOrderSuccess(id){
+  setTitle('Thank you');
+  app.innerHTML = '<div class="spinner"></div>';
+  let order = null;
+  try{ const orders = await api('myOrders'); order = orders.find(o=>o.id===decodeURIComponent(id)); }catch(e){}
+  app.innerHTML = `<div class="wrap"><div class="success">
+    <div class="tick"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></div>
+    <span class="eyebrow">Order ${esc(decodeURIComponent(id||''))}</span>
+    <h1 style="font-size:44px;margin:10px 0">Thank you for your order!</h1>
+    <p class="muted" style="margin-bottom:30px">${order?.status==='Paid' ? 'Your payment was successful. Your files are ready below and we have emailed you a receipt.' : 'Your order is being confirmed. Your downloads will appear in your account as soon as payment clears.'}</p>
+    <div style="text-align:left">${(order?.items||[]).map(dlRow).join('')}</div>
+    <div style="display:flex;gap:12px;justify-content:center;margin-top:26px;flex-wrap:wrap"><a href="#/account/downloads" class="btn btn-primary">Go to my downloads</a><a href="#/shop" class="btn btn-light">Continue shopping</a></div>
+  </div></div>`;
+}
+function dlRow(i){
+  const u = safeUrl(i.downloadUrl);
+  return `<div class="dl"><div class="cv">${cover({id:i.productId,name:i.name,fileFormat:i.fileFormat}, i.imageUrl)}</div>
+    <div style="flex:1;min-width:0"><b>${esc(i.name)}</b><br><small class="muted">${esc(i.fileFormat||'Digital download')}</small></div>
+    ${u?`<a class="btn btn-accent btn-sm" href="${esc(u)}" target="_blank" rel="noopener">Download</a>`:'<span class="muted" style="font-size:13px">Preparing…</span>'}</div>`;
+}
+
+/* ---------------- Views: Auth ---------------- */
+function afterAuth(r, q){ S.token = r.token; S.user = r.user; LS.set('token', r.token); LS.set('user', r.user); toast('Welcome, ' + r.user.firstName + '!'); location.hash = q.next ? '#/' + q.next : '#/account'; }
+async function logout(next){ try{ await api('logout'); }catch(e){} S.token=null; S.user=null; LS.del('token'); LS.del('user'); location.hash = next || '#/'; toast('Signed out'); }
+
+function viewLogin(q){
+  setTitle('Sign in'); setNav('');
+  if(S.token){ location.hash = q.next ? '#/'+q.next : '#/account'; return; }
+  app.innerHTML = `<div class="wrap"><div class="auth"><h1>Welcome back</h1><p class="sub">Sign in to access your downloads and orders.</p>
+    <div id="err"></div>
+    <form id="f"><div class="field"><label>Email</label><input class="input" type="email" name="email" required autocomplete="email"></div>
+      <div class="field"><label>Password</label><input class="input" type="password" name="password" required autocomplete="current-password"></div>
+      <p style="text-align:right;margin:-6px 0 16px;font-size:14px"><a href="#/forgot" style="color:var(--accent);font-weight:700">Forgot password?</a></p>
+      <button class="btn btn-primary btn-block">Sign in</button></form>
+    <p class="auth-alt">New to HRG? <a href="#/signup${q.next?'?next='+esc(q.next):''}">Create an account</a></p></div></div>`;
+  $('#f').onsubmit = async e => { e.preventDefault(); const btn = e.target.querySelector('button'); setBusy(btn,true); showErr($('#err'),'');
+    try{ afterAuth(await api('login', formData(e.target)), q); }catch(err){ showErr($('#err'), err.message); setBusy(btn,false); } };
+}
+
+function viewSignup(q){
+  setTitle('Create account'); setNav('');
+  if(S.token){ location.hash = '#/account'; return; }
+  app.innerHTML = `<div class="wrap"><div class="auth"><h1>Create your account</h1><p class="sub">Free forever. Keep every download in one place.</p>
+    <div id="err"></div>
+    <form id="f">
+      <div class="row2"><div class="field"><label>First name</label><input class="input" name="firstName" required autocomplete="given-name"></div><div class="field"><label>Last name</label><input class="input" name="lastName" required autocomplete="family-name"></div></div>
+      <div class="field"><label>Email</label><input class="input" type="email" name="email" required autocomplete="email"></div>
+      <div class="row2"><div class="field"><label>Phone (optional)</label><input class="input" name="phone" autocomplete="tel"></div>
+      <div class="field"><label>Country</label><select class="input" name="country">${['United Kingdom','Ireland','United States','Canada','Australia','India','United Arab Emirates','Germany','France','Netherlands','Spain','Italy','Singapore','South Africa','New Zealand','Other'].map(c=>`<option>${c}</option>`).join('')}</select></div></div>
+      <div class="field"><label>Password</label><input class="input" type="password" name="password" required minlength="8" autocomplete="new-password" placeholder="At least 8 characters, letters & numbers"></div>
+      <label class="check"><input type="checkbox" name="acceptTerms" required><span>I agree to the <a href="#/terms" target="_blank" style="text-decoration:underline">Terms</a> and <a href="#/privacy" target="_blank" style="text-decoration:underline">Privacy Policy</a>.</span></label>
+      <label class="check"><input type="checkbox" name="marketingOptIn"><span>Email me new products and offers (unsubscribe any time).</span></label>
+      <button class="btn btn-primary btn-block" style="margin-top:6px">Create account</button></form>
+    <p class="auth-alt">Already have an account? <a href="#/login${q.next?'?next='+esc(q.next):''}">Sign in</a></p></div></div>`;
+  $('#f').onsubmit = async e => { e.preventDefault(); const btn = e.target.querySelector('button'); setBusy(btn,true); showErr($('#err'),'');
+    try{ afterAuth(await api('signup', formData(e.target)), q); }catch(err){ showErr($('#err'), err.message); setBusy(btn,false); } };
+}
+
+function viewForgot(){
+  setTitle('Reset password');
+  app.innerHTML = `<div class="wrap"><div class="auth"><h1>Reset password</h1><p class="sub">We'll email you a 6-digit code.</p><div id="err"></div>
+    <form id="f1"><div class="field"><label>Email</label><input class="input" type="email" name="email" required></div><button class="btn btn-primary btn-block">Send reset code</button></form>
+    <form id="f2" class="hidden"><div class="field"><label>Email</label><input class="input" type="email" name="email" required></div>
+      <div class="field"><label>6-digit code</label><input class="input" name="code" required inputmode="numeric" maxlength="6"></div>
+      <div class="field"><label>New password</label><input class="input" type="password" name="password" required minlength="8"></div>
+      <button class="btn btn-primary btn-block">Set new password</button></form>
+    <p class="auth-alt"><a href="#/login">Back to sign in</a></p></div></div>`;
+  $('#f1').onsubmit = async e => { e.preventDefault(); const btn=e.target.querySelector('button'); setBusy(btn,true);
+    try{ const r = await api('forgotPassword', formData(e.target)); $('#err').innerHTML = `<div class="alert alert-ok">${esc(r.message)}</div>`; $('#f2').email.value = e.target.email.value; e.target.classList.add('hidden'); $('#f2').classList.remove('hidden'); }
+    catch(err){ showErr($('#err'), err.message); } setBusy(btn,false); };
+  $('#f2').onsubmit = async e => { e.preventDefault(); const btn=e.target.querySelector('button'); setBusy(btn,true);
+    try{ const r = await api('resetPassword', formData(e.target)); toast(r.message); location.hash = '#/login'; }
+    catch(err){ showErr($('#err'), err.message); setBusy(btn,false); } };
+}
+
+/* ---------------- Views: Account ---------------- */
+async function viewAccount(tab){
+  setTitle('My account'); setNav('');
+  if(!S.token){ location.hash = '#/login?next=account'; return; }
+  const tabs = [['downloads','My downloads'],['orders','Order history'],['profile','Profile'],['password','Password']];
+  app.innerHTML = `<div class="wrap"><div class="page-head"><span class="eyebrow">My account</span><h1>Hello, ${esc(S.user?.firstName||'')}</h1></div>
+    <div class="acct"><nav class="acct-nav">${tabs.map(([k,l])=>`<a href="#/account/${k}" class="${k===tab?'on':''}">${l}</a>`).join('')}<a href="#" id="logoutLink">Sign out</a></nav>
+    <div id="acctBody"><div class="spinner"></div></div></div></div>`;
+  $('#logoutLink').onclick = e => { e.preventDefault(); logout(); };
+  const body = $('#acctBody');
+  try{
+    if(tab==='downloads' || tab==='orders'){
+      const orders = await api('myOrders');
+      if(tab==='downloads'){
+        const seen = new Set(), items = [];
+        orders.filter(o=>o.status==='Paid').forEach(o=>o.items.forEach(i=>{ if(!seen.has(i.productId)){ seen.add(i.productId); items.push(i); } }));
+        body.innerHTML = items.length ? `<div class="panel"><h3>Your library</h3>${items.map(dlRow).join('')}</div>` : `<div class="panel empty"><h3>No downloads yet</h3><p>Products you buy will appear here instantly.</p><a href="#/shop" class="btn btn-primary" style="margin-top:16px">Browse the store</a></div>`;
+      } else {
+        body.innerHTML = orders.length ? orders.map(o=>`<div class="order-card"><div class="oh"><div><b>${esc(o.id)}</b><br><small class="muted">${fdt(o.createdAt)}</small></div><div style="text-align:right"><span class="pill ${esc(o.status)}">${esc(o.status)}</span><br><b>${fmt(o.total)}</b></div></div>
+          ${o.items.map(i=>`<div class="sum-row"><span>${esc(i.name)}</span><span>${fmt(i.price)}</span></div>`).join('')}
+          ${o.discount?`<div class="sum-row" style="color:var(--ok)"><span>Discount ${esc(o.couponCode)}</span><span>−${fmt(o.discount)}</span></div>`:''}
+          <p class="muted" style="font-size:12px;margin-top:6px">Includes VAT ${fmt(o.vat)}</p>
+          <button class="btn btn-light btn-sm" style="margin-top:10px" data-invoice="${esc(o.id)}">View receipt</button></div>`).join('')
+          : `<div class="panel empty"><h3>No orders yet</h3></div>`;
+        $$('[data-invoice]').forEach(b=>b.onclick=()=>printReceipt(orders.find(o=>o.id===b.dataset.invoice)));
+      }
+    } else if(tab==='profile'){
+      const u = await api('me'); S.user = u; LS.set('user', u);
+      body.innerHTML = `<div class="panel"><h3>Profile</h3><div id="err"></div><form id="pf">
+        <div class="row2"><div class="field"><label>First name</label><input class="input" name="firstName" value="${esc(u.firstName)}" required></div><div class="field"><label>Last name</label><input class="input" name="lastName" value="${esc(u.lastName)}" required></div></div>
+        <div class="field"><label>Email</label><input class="input" value="${esc(u.email)}" disabled></div>
+        <div class="row2"><div class="field"><label>Phone</label><input class="input" name="phone" value="${esc(u.phone)}"></div><div class="field"><label>Country</label><input class="input" name="country" value="${esc(u.country)}"></div></div>
+        <label class="check"><input type="checkbox" name="marketingOptIn" ${u.marketingOptIn?'checked':''}><span>Email me new products and offers</span></label>
+        <button class="btn btn-primary">Save changes</button></form><p class="muted" style="font-size:13px;margin-top:16px">Member since ${fdate(u.createdAt)}. To change your email or delete your account, please <a href="#/contact" style="text-decoration:underline">contact us</a>.</p></div>`;
+      $('#pf').onsubmit = async e => { e.preventDefault(); const btn=e.target.querySelector('button'); setBusy(btn,true);
+        try{ const u2 = await api('updateProfile', formData(e.target)); S.user=u2; LS.set('user',u2); toast('Profile updated'); }catch(err){ showErr($('#err'),err.message); } setBusy(btn,false); };
+    } else {
+      body.innerHTML = `<div class="panel" style="max-width:520px"><h3>Change password</h3><div id="err"></div><form id="pw">
+        <div class="field"><label>Current password</label><input class="input" type="password" name="currentPassword" required></div>
+        <div class="field"><label>New password</label><input class="input" type="password" name="newPassword" required minlength="8"></div>
+        <button class="btn btn-primary">Update password</button></form></div>`;
+      $('#pw').onsubmit = async e => { e.preventDefault(); const btn=e.target.querySelector('button'); setBusy(btn,true);
+        try{ const r = await api('changePassword', formData(e.target)); toast(r.message); e.target.reset(); }catch(err){ showErr($('#err'),err.message); } setBusy(btn,false); };
+    }
+  }catch(err){
+    if(err.auth){ location.hash = '#/login?next=account'; return; }
+    body.innerHTML = `<div class="alert alert-err">${esc(err.message)}</div>`;
+  }
+}
+
+function printReceipt(o){
+  const st = S.store.settings;
+  const w = window.open('', '_blank');
+  if(!w){ toast('Allow pop-ups to view the receipt', true); return; }
+  w.document.write(`<html><head><title>Receipt ${esc(o.id)}</title><style>body{font-family:Arial;padding:40px;color:#0f1b2d;max-width:720px;margin:auto}table{width:100%;border-collapse:collapse;margin:24px 0}td,th{padding:10px;border-bottom:1px solid #ddd;text-align:left}td:last-child,th:last-child{text-align:right}h1{margin:0}.r{text-align:right}</style></head><body>
+    <h1>${esc(st.storeName)}</h1><p>${esc(st.address)}<br>${esc(st.phone)} · ${esc(st.supportEmail)}${st.vatNumber?'<br>VAT No: '+esc(st.vatNumber):''}${st.companyNumber?'<br>Company No: '+esc(st.companyNumber):''}</p>
+    <h2>Receipt ${esc(o.id)}</h2><p>Date: ${fdt(o.paidAt||o.createdAt)}<br>Customer: ${esc(o.customerName)} (${esc(o.customerEmail)})<br>Status: ${esc(o.status)}</p>
+    <table><tr><th>Item</th><th>Price</th></tr>${o.items.map(i=>`<tr><td>${esc(i.name)}</td><td>${fmt(i.price)}</td></tr>`).join('')}</table>
+    <p class="r">Subtotal: ${fmt(o.subtotal)}${o.discount?`<br>Discount (${esc(o.couponCode)}): −${fmt(o.discount)}`:''}<br><b>Total: ${fmt(o.total)}</b><br>Includes VAT: ${fmt(o.vat)}</p>
+    <script>window.print()<\/script></body></html>`);
+  w.document.close();
+}
+
+/* ---------------- Views: Content pages ---------------- */
+function viewAbout(){
+  setNav('about'); setTitle('About us');
+  app.innerHTML = `<div class="wrap"><div class="page-head"><span class="eyebrow">About HRG International</span><h1>Practical digital products,<br>built by operators.</h1></div>
+    <div class="pd" style="padding-top:0"><div class="prose">
+      <p>HRG International is a UK digital products company based in Peterborough. We design templates, toolkits, guides and planners that help founders, freelancers and small teams work like much bigger organisations.</p>
+      <p>Everything we sell is built from real operating experience — finance, sales, operations and brand — and refined until it is simple to pick up and use the same day.</p>
+      <h2>What we stand for</h2>
+      <ul class="ticks"><li>Quality over quantity — every product is tested before release</li><li>Fair, transparent pricing in GBP with VAT included</li><li>Instant delivery and lifetime access to what you buy</li><li>Real people answering your questions</li></ul>
+    </div>
+    <div class="panel"><h3>Get in touch</h3><p class="muted" style="margin-bottom:14px">We're happy to help with product questions, licensing or custom work.</p>
+      <p><b>Address</b><br>${esc(S.store.settings.address)}</p><p style="margin-top:10px"><b>Phone</b><br><a href="tel:${esc(S.store.settings.phone.replace(/\s/g,''))}">${esc(S.store.settings.phone)}</a></p><p style="margin-top:10px"><b>Email</b><br>${esc(S.store.settings.supportEmail)}</p>
+      <a href="#/contact" class="btn btn-primary" style="margin-top:18px">Contact us</a></div></div></div>`;
+}
+
+function viewContact(){
+  setNav('contact'); setTitle('Contact us');
+  const st = S.store.settings;
+  app.innerHTML = `<div class="wrap"><div class="page-head"><span class="eyebrow">Contact</span><h1>We'd love to hear from you</h1><p class="muted" style="margin-top:8px">We reply within one working day (Mon–Fri, 9am–5:30pm UK time).</p></div>
+    <div class="co"><div class="panel"><h3>Send us a message</h3><div id="err"></div>
+      <form id="cf"><div class="row2"><div class="field"><label>Your name</label><input class="input" name="name" required value="${esc(S.user?((S.user.firstName||'')+' '+(S.user.lastName||'')).trim():'')}"></div><div class="field"><label>Email</label><input class="input" type="email" name="email" required value="${esc(S.user?.email||'')}"></div></div>
+      <div class="field"><label>Subject</label><select class="input" name="subject"><option>Product question</option><option>Order or download help</option><option>Licensing</option><option>Custom work / partnership</option><option>Other</option></select></div>
+      <div class="field"><label>Message</label><textarea class="input" name="message" required></textarea></div>
+      <button class="btn btn-primary">Send message</button></form></div>
+    <div class="panel"><h3>Contact details</h3>
+      <p><b>HRG International</b><br>${esc(st.address).replace(/, /g,'<br>')}</p>
+      <p style="margin-top:14px"><b>Phone</b><br><a href="tel:${esc(st.phone.replace(/\s/g,''))}">${esc(st.phone)}</a></p>
+      <p style="margin-top:14px"><b>Email</b><br>${esc(st.supportEmail)}</p>
+      <iframe title="Map" style="width:100%;height:220px;border:0;border-radius:12px;margin-top:18px" loading="lazy" src="https://www.google.com/maps?q=${encodeURIComponent('33 Wilton Avenue, Hampton Gardens, Peterborough PE7 8RQ')}&output=embed"></iframe>
+    </div></div></div>`;
+  $('#cf').onsubmit = async e => { e.preventDefault(); const btn=e.target.querySelector('button'); setBusy(btn,true);
+    try{ const r = await api('contact', formData(e.target)); $('#err').innerHTML = `<div class="alert alert-ok">${esc(r.message)}</div>`; e.target.reset(); }
+    catch(err){ showErr($('#err'), err.message); } setBusy(btn,false); };
+}
+
+const FAQS = [
+  ['How do I receive my files?','Straight after payment you will see download buttons on the confirmation page. We also email you the links, and they stay in My Account → Downloads permanently.'],
+  ['Which payment methods do you accept?','We accept PayPal plus Visa, Mastercard and American Express via PayPal\'s secure checkout. You don\'t need a PayPal account to pay by card.'],
+  ['Do prices include VAT?','Yes. All prices are shown in pounds sterling (GBP) and include UK VAT where applicable. Your receipt shows the VAT amount.'],
+  ['Can I buy from outside the UK?','Absolutely. We sell worldwide. PayPal converts the GBP price into your local currency at checkout.'],
+  ['Can I get a refund?','Because digital files are delivered instantly, you agree at checkout to waive the 14-day cancellation period. If a file is faulty or not as described, contact us and we\'ll fix it or refund you.'],
+  ['Can I use the products for client work?','Yes — our standard licence covers your own business and your client projects. Reselling or redistributing the source files is not permitted.'],
+  ['I lost my download — what now?','Sign in and go to My Account → Downloads. If you have any trouble, contact us with your order number.']
+];
+function viewFaq(){
+  setNav('faq'); setTitle('Help & FAQs');
+  app.innerHTML = `<div class="wrap" style="max-width:860px"><div class="page-head"><span class="eyebrow">Help centre</span><h1>Frequently asked questions</h1></div>
+    <div class="faq" style="margin-bottom:60px">${FAQS.map(([q,a])=>`<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</div>
+    <div class="panel" style="text-align:center;margin-bottom:80px"><h3>Still need help?</h3><p class="muted">Our team is here Monday to Friday.</p><a href="#/contact" class="btn btn-primary" style="margin-top:14px">Contact support</a></div></div>`;
+}
+
+function viewLegal(kind){
+  const st = S.store.settings, co = `${st.storeName}, ${st.address}`;
+  const docs = {
+    privacy:['Privacy Policy', `<p>This policy explains how ${esc(co)} ("we", "us") collects and uses your personal data in line with the UK GDPR and the Data Protection Act 2018. We are the data controller.</p>
+      <h3>What we collect</h3><ul><li>Account details: name, email, optional phone and country</li><li>Order details: products purchased, amounts, PayPal transaction references</li><li>Messages you send us</li></ul>
+      <h3>Why we use it</h3><ul><li>To supply your digital products and manage your account (contract)</li><li>To meet tax and accounting obligations (legal obligation)</li><li>To send marketing emails, only if you opted in (consent)</li></ul>
+      <h3>Payments</h3><p>Payments are handled by PayPal. We never receive or store your card details.</p>
+      <h3>Where data is stored</h3><p>Our store runs on Google Workspace infrastructure. Data may be processed outside the UK under appropriate safeguards.</p>
+      <h3>How long we keep it</h3><p>Order records are kept for 6 years for HMRC purposes. Account data is kept while your account is active.</p>
+      <h3>Your rights</h3><p>You can request access to, correction or deletion of your data, object to processing, or withdraw marketing consent by contacting ${esc(st.supportEmail)}. You may also complain to the Information Commissioner's Office (ico.org.uk).</p>`],
+    terms:['Terms & Conditions', `<p>These terms apply to purchases from ${esc(co)}. By placing an order you agree to them.</p>
+      <h3>Products</h3><p>All products are digital downloads. No physical goods are shipped.</p>
+      <h3>Prices &amp; payment</h3><p>Prices are in GBP and include VAT where applicable. Payment is taken in full at checkout through PayPal.</p>
+      <h3>Delivery</h3><p>Download links are provided immediately after successful payment, by email and in your account.</p>
+      <h3>Cancellation</h3><p>Under the Consumer Contracts (Information, Cancellation and Additional Charges) Regulations 2013 you normally have 14 days to cancel. For digital content, this right ends once supply begins with your express consent and acknowledgement, which you give at checkout.</p>
+      <h3>Faulty content</h3><p>Your rights under the Consumer Rights Act 2015 are not affected. If digital content is faulty or not as described, we will repair, replace or refund it.</p>
+      <h3>Licence</h3><p>On purchase you receive a non-exclusive, non-transferable licence to use the product in your own business and client projects. You may not resell, share or redistribute the files.</p>
+      <h3>Liability</h3><p>Nothing in these terms limits liability for death or personal injury caused by negligence, or for fraud. Otherwise our liability is limited to the price paid.</p>
+      <h3>Law</h3><p>These terms are governed by the laws of England and Wales.</p>`],
+    refunds:['Refunds & Cancellations', `<p>We want you to be happy with every purchase.</p><h3>Digital content &amp; your cancellation right</h3><p>Because files are delivered instantly, at checkout you consent to immediate supply and acknowledge that your 14-day cancellation right ends once the download is available.</p>
+      <h3>When we will refund</h3><ul><li>The file is corrupted, incomplete or will not open and we can't fix it</li><li>The product is materially different from its description</li><li>You were charged twice for the same order</li></ul>
+      <h3>How to request</h3><p>Contact ${esc(st.supportEmail)} or call ${esc(st.phone)} with your order number within 30 days. Approved refunds go back to your original payment method through PayPal, usually within 5 working days.</p>`],
+    cookies:['Cookie Policy', `<p>We keep things minimal. We use your browser's local storage to remember your basket, your sign-in session and your cookie choice — these are strictly necessary for the site to work.</p>
+      <p>When you check out, PayPal sets its own cookies to process payment securely and prevent fraud. The embedded Google Map on our contact page may set Google cookies. We do not use advertising or cross-site tracking cookies.</p>
+      <p>You can clear local storage at any time through your browser settings.</p>`]
+  };
+  const [t, html] = docs[kind];
+  setTitle(t); setNav('');
+  app.innerHTML = `<div class="wrap" style="max-width:860px"><div class="page-head"><span class="eyebrow">Legal</span><h1>${t}</h1><p class="muted">Last updated ${new Date().toLocaleDateString('en-GB',{month:'long',year:'numeric'})}</p></div><div class="prose panel" style="margin-bottom:80px;max-width:none">${html}</div></div>`;
+}
+function view404(){ setTitle('Not found'); app.innerHTML = `<div class="wrap empty" style="padding:120px 20px"><h3>Page not found</h3><p>The page you're looking for doesn't exist.</p><a href="#/" class="btn btn-primary" style="margin-top:16px">Back to home</a></div>`; }
+
+/* =============================================================================
+   ADMIN PANEL
+============================================================================= */
+const ICON = {
+  dashboard:'<path d="M3 13h8V3H3zM13 21h8V11h-8zM3 21h8v-6H3zM13 3v6h8V3z"/>',
+  products:'<path d="M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8"/>',
+  categories:'<path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/>',
+  orders:'<path d="M6 2h12l2 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6zM4 6h16M9 11h6M9 15h6"/>',
+  customers:'<circle cx="9" cy="8" r="4"/><path d="M2 21c1-4 4-6 7-6s6 2 7 6M17 11a3 3 0 1 0 0-6M22 21c-.5-2.5-2-4-4-5"/>',
+  coupons:'<path d="M3 9V6a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v3a3 3 0 0 0 0 6v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-3a3 3 0 0 0 0-6zM10 5v14"/>',
+  messages:'<path d="M4 4h16v12H7l-3 3z"/>',
+  settings:'<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/>',
+  payments:'<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/>',
+  store:'<path d="M3 9l2-5h14l2 5M3 9v11h18V9M3 9h18M9 20v-6h6v6"/>',
+  logout:'<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/>'
+};
+const ico = k => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${ICON[k]}</svg>`;
+const ADM = { cache:{} };
+const aapi = (action, data) => api(action, data, {admin:true});
+
+async function viewAdmin(section){
+  setTitle('Admin');
+  if(!S.adminToken) return adminLogin();
+  const nav = [['dashboard','Dashboard'],['products','Products'],['categories','Categories'],['orders','Orders'],['customers','Customers'],['payments','Payments'],['coupons','Discount codes'],['messages','Messages'],['settings','Settings']];
+  app.innerHTML = `<div class="adm"><aside class="adm-side">
+      <a href="#/" class="logo" style="padding:0;margin-bottom:28px"><span class="logo-mark">H</span><span>HRG ADMIN<small style="color:#8b97ab">STORE CONTROL</small></span></a>
+      ${nav.map(([k,l])=>`<a href="#/admin/${k}" class="${k===section?'on':''}">${ico(k)}${l}${k==='messages'&&ADM.unread?`<span class="cnt">${ADM.unread}</span>`:''}</a>`).join('')}
+      <div style="height:20px"></div><a href="#/" target="_blank">${ico('store')}View store</a><a href="#" id="admOut">${ico('logout')}Sign out</a>
+    </aside><div class="adm-main" id="adm"><div class="spinner"></div></div></div>`;
+  $('#admOut').onclick = async e => { e.preventDefault(); try{ await aapi('logout'); }catch(x){} S.adminToken=null; S.admin=null; LS.del('atoken'); LS.del('admin'); route(); };
+  const el = $('#adm');
+  try{
+    await ({dashboard:admDashboard, products:admProducts, categories:admCategories, orders:admOrders, customers:admCustomers, payments:admPayments, coupons:admCoupons, messages:admMessages, settings:admSettings}[section] || admDashboard)(el);
+  }catch(err){
+    if(err.auth){ toast(err.message, true); return route(); }
+    el.innerHTML = `<div class="alert alert-err">${esc(err.message)}</div>`;
+  }
+}
+
+function adminLogin(){
+  app.innerHTML = `<div class="adm-login"><div class="auth"><div class="logo" style="margin-bottom:22px"><span class="logo-mark">H</span><span>HRG INTERNATIONAL<small>ADMIN PANEL</small></span></div>
+    <h1 style="font-size:28px">Admin sign in</h1><p class="sub">Restricted area — authorised staff only.</p><div id="err"></div>
+    ${DEMO?'<div class="alert alert-info">Demo mode: set CONFIG.API_URL to connect your Apps Script backend first.</div>':''}
+    <form id="af"><div class="field"><label>Admin email</label><input class="input" type="email" name="email" required></div>
+    <div class="field"><label>Password</label><input class="input" type="password" name="password" required></div>
+    <button class="btn btn-primary btn-block">Sign in</button></form>
+    <p class="auth-alt"><a href="#/">← Back to store</a></p></div></div>`;
+  $('#af').onsubmit = async e => { e.preventDefault(); const btn=e.target.querySelector('button'); setBusy(btn,true);
+    try{ const r = await api('adminLogin', formData(e.target)); S.adminToken=r.token; S.admin=r.admin; LS.set('atoken', r.token); LS.set('admin', r.admin); route(); }
+    catch(err){ showErr($('#err'), err.message); setBusy(btn,false); } };
+}
+function admHead(title, actions=''){ return `<div class="adm-top"><div><h1>${title}</h1><p class="muted" style="font-size:14px">Signed in as ${esc(S.admin?.email||'')}</p></div><div class="inline">${actions}</div></div>`; }
+async function refreshStore(){ try{ S.store = await api('getStore'); }catch(e){} }
+
+/* Dashboard */
+async function admDashboard(el){
+  const d = await aapi('adminDashboard');
+  ADM.unread = d.unreadMessages;
+  const max = Math.max(1, ...d.days.map(x=>x.revenue));
+  el.innerHTML = admHead('Dashboard', `<a class="btn btn-accent btn-sm" href="#/admin/products">+ New product</a>`) +
+  (!d.paypalEnabled ? `<div class="alert alert-err">⛔ PayPal checkout is switched <b>OFF</b> — customers cannot pay. <a href="#/admin/payments" style="text-decoration:underline">Open Payments</a></div>`
+    : !d.paypalReady ? `<div class="alert alert-info">⚠️ PayPal ${esc(d.paypalMode)} credentials are missing. <a href="#/admin/payments" style="text-decoration:underline">Add them in Payments</a>.</div>`
+    : `<div class="alert ${d.paypalMode==='live'?'alert-ok':'alert-info'}">${d.paypalMode==='live'?'✓ PayPal is <b>LIVE</b> — taking real payments.':'🧪 PayPal is in <b>SANDBOX</b> (test) mode — no real money is taken.'} <a href="#/admin/payments" style="text-decoration:underline">Manage</a></div>`) +
+  `<div class="kpis">
+    <div class="kpi"><small>Total revenue</small><b>${fmt(d.revenue)}</b><span class="muted" style="font-size:13px">${fmt(d.monthRevenue)} this month</span></div>
+    <div class="kpi"><small>Paid orders</small><b>${d.paidOrders}</b><span class="muted" style="font-size:13px">${d.totalOrders} total · AOV ${fmt(d.avgOrder)}</span></div>
+    <div class="kpi"><small>Customers</small><b>${d.customers}</b><span class="muted" style="font-size:13px">registered accounts</span></div>
+    <div class="kpi"><small>Products</small><b>${d.activeProducts}</b><span class="muted" style="font-size:13px">${d.products} total · ${d.unreadMessages} new messages</span></div>
+  </div>
+  <div class="cols2">
+    <div class="box"><h3>Revenue — last 14 days</h3><div class="bars">${d.days.map(x=>`<div class="bar" title="${esc(x.label)}: ${fmt(x.revenue)} (${x.orders} orders)"><i style="height:${Math.round(x.revenue/max*100)}%"></i><span>${esc(x.label.split(' ')[0])}</span></div>`).join('')}</div></div>
+    <div class="box"><h3>Top products</h3>${d.top.map((p,i)=>`<div class="sum-row"><span>${i+1}. ${esc(p.name)}</span><b>${p.salesCount} sold</b></div>`).join('') || '<p class="muted">No sales yet</p>'}</div>
+  </div>
+  <div class="box"><h3>Recent orders</h3><div class="t-wrap"><table class="t"><tr><th>Order</th><th>Customer</th><th>Date</th><th>Status</th><th>Total</th></tr>
+    ${d.recent.map(o=>`<tr><td><b>${esc(o.id)}</b></td><td>${esc(o.customerName)}</td><td>${fdt(o.createdAt)}</td><td><span class="pill ${esc(o.status)}">${esc(o.status)}</span></td><td><b>${fmt(o.total)}</b></td></tr>`).join('') || '<tr><td colspan="5" class="muted">No orders yet</td></tr>'}</table></div></div>`;
+}
+
+/* Upload helpers */
+function fileToBase64(file){ return new Promise((res,rej)=>{ const r = new FileReader(); r.onload=()=>res(String(r.result)); r.onerror=rej; r.readAsDataURL(file); }); }
+function compressImage(file, max=1600){ return new Promise((res)=>{
+  if(!/^image\/(jpeg|png|webp)$/.test(file.type)) return fileToBase64(file).then(b=>res({base64:b, mimeType:file.type}));
+  const img = new Image(); img.onload = () => { const s = Math.min(1, max/Math.max(img.width,img.height)); const c = document.createElement('canvas'); c.width = Math.round(img.width*s); c.height = Math.round(img.height*s);
+    c.getContext('2d').drawImage(img,0,0,c.width,c.height); const keepPng = file.type==='image/png' && file.size < 400000; const mt = keepPng?'image/png':'image/jpeg'; res({base64:c.toDataURL(mt, .86), mimeType:mt}); URL.revokeObjectURL(img.src); };
+  img.src = URL.createObjectURL(file); }); }
+async function uploadTo(kind, file){
+  if(kind==='file' && file.size > 45*1024*1024) throw new Error('File is larger than 45 MB. Upload it to Google Drive manually and paste the share link.');
+  const payload = kind==='image' ? await compressImage(file) : { base64: await fileToBase64(file), mimeType: file.type || 'application/octet-stream' };
+  return aapi('adminUpload', { kind, name: file.name, ...payload });
+}
+function bindUpload(btnSel, inputSel, kind, targetSel, onDone){
+  const input = $(inputSel); $(btnSel).onclick = () => input.click();
+  input.onchange = async () => { const f = input.files[0]; if(!f) return; const btn = $(btnSel); setBusy(btn, true, 'Uploading…');
+    try{ const r = await uploadTo(kind, f); if(kind==='image' && targetSel.includes('gallery')) { const ta = $(targetSel); ta.value = (ta.value.trim()?ta.value.trim()+'\n':'') + r.url; } else $(targetSel).value = r.url; onDone && onDone(r); toast('Uploaded'); }
+    catch(err){ toast(err.message, true); } setBusy(btn,false); input.value=''; };
+}
+
+/* Products */
+async function admProducts(el){
+  const [list, categories] = await Promise.all([aapi('adminListProducts'), aapi('adminListCategories')]);
+  ADM.products = list; ADM.categories = categories;
+  const draw = (term='') => {
+    const rows = list.filter(p=>!term || (p.name+p.id).toLowerCase().includes(term.toLowerCase()));
+    $('#ptable').innerHTML = `<tr><th></th><th>Product</th><th>Category</th><th>Price</th><th>Sales</th><th>File</th><th>Status</th><th></th></tr>` +
+      (rows.map(p=>`<tr><td><div class="thumb">${cover(p)}</div></td><td><b>${esc(p.name)}</b><br><small class="muted">${esc(p.id)} · /${esc(p.slug)}</small></td>
+        <td>${esc(categories.find(c=>c.id===p.categoryId)?.name || '—')}</td><td><b>${fmt(p.price)}</b>${p.compareAtPrice>p.price?`<br><s class="muted">${fmt(p.compareAtPrice)}</s>`:''}</td>
+        <td>${p.salesCount}</td><td>${p.downloadUrl?'<span class="pill Paid">Attached</span>':'<span class="pill Failed">Missing</span>'}</td>
+        <td><span class="pill ${p.active?'active':'blocked'}">${p.active?'Live':'Hidden'}</span>${p.featured?' <span class="pill">★</span>':''}</td>
+        <td style="white-space:nowrap"><button class="btn btn-light btn-sm" data-edit="${esc(p.id)}">Edit</button> <button class="btn btn-danger btn-sm" data-del="${esc(p.id)}">Delete</button></td></tr>`).join('') || '<tr><td colspan="8" class="muted">No products</td></tr>');
+    $$('[data-edit]').forEach(b=>b.onclick=()=>productEditor(list.find(p=>p.id===b.dataset.edit)));
+    $$('[data-del]').forEach(b=>b.onclick=async()=>{ const p=list.find(x=>x.id===b.dataset.del); if(!await confirmBox(`Delete “${p.name}”? Existing orders keep their records.`)) return;
+      try{ await aapi('adminDeleteProduct',{id:p.id}); toast('Product deleted'); await refreshStore(); route(); }catch(err){ toast(err.message,true); } });
+  };
+  el.innerHTML = admHead('Products', `<button class="btn btn-accent btn-sm" id="newP">+ Add product</button>`) +
+    `<div class="box"><div class="toolbar"><input class="input" id="psearch" placeholder="Search products…"></div><div class="t-wrap"><table class="t" id="ptable"></table></div></div>`;
+  draw(); $('#psearch').oninput = e => draw(e.target.value); $('#newP').onclick = () => productEditor(null);
+}
+
+function productEditor(p){
+  const isNew = !p; p = p || { active:true, featured:false, price:'', compareAtPrice:'' };
+  openModal(`<div class="modal-h"><h3>${isNew?'Add product':'Edit product'}</h3><button class="icon-btn" data-close-modal>✕</button></div>
+  <form id="pe"><div class="modal-b"><div id="perr"></div><div class="grid-form"><div>
+    <div class="field"><label>Product name *</label><input class="input" name="name" required value="${esc(p.name)}"></div>
+    <div class="row2"><div class="field"><label>Category</label><select class="input" name="categoryId"><option value="">— None —</option>${ADM.categories.map(c=>`<option value="${esc(c.id)}" ${c.id===p.categoryId?'selected':''}>${esc(c.name)}</option>`).join('')}</select></div>
+      <div class="field"><label>URL slug</label><input class="input" name="slug" value="${esc(p.slug||'')}" placeholder="auto from name"></div></div>
+    <div class="row2"><div class="field"><label>Price (£, inc. VAT) *</label><input class="input" type="number" step="0.01" min="0" name="price" required value="${esc(p.price)}"></div>
+      <div class="field"><label>Compare-at price (£)</label><input class="input" type="number" step="0.01" min="0" name="compareAtPrice" value="${esc(p.compareAtPrice||'')}" placeholder="Shows as strikethrough"></div></div>
+    <div class="field"><label>Short description</label><input class="input" name="shortDescription" maxlength="300" value="${esc(p.shortDescription||'')}"></div>
+    <div class="field"><label>Full description</label><textarea class="input" name="description" style="min-height:150px">${esc(p.description||'')}</textarea></div>
+    <div class="field"><label>Features / what's included (one per line)</label><textarea class="input" name="features">${esc(p.featuresText ?? (p.features||[]).join('\n'))}</textarea></div>
+    <div class="row2"><div class="field"><label>File format</label><input class="input" name="fileFormat" value="${esc(p.fileFormat||'')}" placeholder="e.g. PDF, Excel"></div>
+      <div class="field"><label>File size</label><input class="input" name="fileSize" value="${esc(p.fileSize||'')}" placeholder="e.g. 12 MB"></div></div>
+    <div class="field"><label>Tags (comma separated)</label><input class="input" name="tags" value="${esc(p.tagsText ?? (p.tags||[]).join(', '))}"></div>
+  </div><div>
+    <div class="field"><label>Main image</label><div class="img-prev" id="imgPrev">${cover(p.name?p:{id:'new',name:'New product'})}</div>
+      <div class="inline"><input class="input" name="imageUrl" id="imageUrl" value="${esc(p.imageUrl||'')}" placeholder="https://…"><button type="button" class="btn btn-light btn-sm" id="upImg">Upload</button></div>
+      <input type="file" accept="image/*" id="imgFile" hidden><small class="muted">Leave empty to use auto-generated cover art.</small></div>
+    <div class="field"><label>Gallery image URLs (one per line)</label><textarea class="input" name="gallery" id="galleryTa" style="min-height:80px">${esc(p.galleryText ?? (p.gallery||[]).join('\n'))}</textarea>
+      <button type="button" class="btn btn-light btn-sm" id="upGal" style="align-self:flex-start">Upload gallery image</button><input type="file" accept="image/*" id="galFile" hidden></div>
+    <div class="field"><label>Download file (delivered after payment) *</label>
+      <div class="inline"><input class="input" name="downloadUrl" id="downloadUrl" value="${esc(p.downloadUrl||'')}" placeholder="Drive / Dropbox link"><button type="button" class="btn btn-light btn-sm" id="upFile">Upload</button></div>
+      <input type="file" id="dlFile" hidden><small class="muted">Only shown to customers who have paid.</small></div>
+    <label class="check"><input type="checkbox" name="active" ${p.active?'checked':''}><span><b>Live</b> — visible in store</span></label>
+    <label class="check"><input type="checkbox" name="featured" ${p.featured?'checked':''}><span><b>Featured</b> — show on home page</span></label>
+  </div></div></div>
+  <div class="modal-f"><button type="button" class="btn btn-light" data-close-modal>Cancel</button><button class="btn btn-accent">${isNew?'Create product':'Save changes'}</button></div></form>`);
+  const prev = () => { const u = $('#imageUrl').value.trim(); $('#imgPrev').innerHTML = cover({id:p.id||'new', name:$('#pe').name.value||'New product', fileFormat:$('#pe').fileFormat.value}, u); };
+  $('#imageUrl').oninput = prev;
+  bindUpload('#upImg', '#imgFile', 'image', '#imageUrl', prev);
+  bindUpload('#upGal', '#galFile', 'image', '#galleryTa');
+  bindUpload('#upFile', '#dlFile', 'file', '#downloadUrl');
+  $('#pe').onsubmit = async e => { e.preventDefault(); const btn = e.target.querySelector('.modal-f .btn-accent'); setBusy(btn,true);
+    try{ await aapi('adminSaveProduct', {...formData(e.target), id: p.id}); closeModal(); toast(isNew?'Product created':'Product saved'); await refreshStore(); route(); }
+    catch(err){ showErr($('#perr'), err.message); setBusy(btn,false); $('#modal').scrollTop = 0; } };
+}
+
+/* Categories */
+async function admCategories(el){
+  const list = await aapi('adminListCategories');
+  el.innerHTML = admHead('Categories', `<button class="btn btn-accent btn-sm" id="newC">+ Add category</button>`) +
+    `<div class="box"><div class="t-wrap"><table class="t"><tr><th>Order</th><th>Name</th><th>Slug</th><th>Products</th><th>Status</th><th></th></tr>
+    ${list.map(c=>`<tr><td>${c.sortOrder}</td><td><b>${esc(c.name)}</b><br><small class="muted">${esc(c.description)}</small></td><td>/${esc(c.slug)}</td><td>${c.productCount}</td>
+      <td><span class="pill ${c.active?'active':'blocked'}">${c.active?'Visible':'Hidden'}</span></td>
+      <td style="white-space:nowrap"><button class="btn btn-light btn-sm" data-edit="${esc(c.id)}">Edit</button> <button class="btn btn-danger btn-sm" data-del="${esc(c.id)}">Delete</button></td></tr>`).join('') || '<tr><td colspan="6" class="muted">No categories</td></tr>'}</table></div></div>`;
+  const editor = c => { const isNew=!c; c = c || {active:true, sortOrder: list.length+1};
+    openModal(`<div class="modal-h"><h3>${isNew?'Add':'Edit'} category</h3><button class="icon-btn" data-close-modal>✕</button></div><form id="cf"><div class="modal-b"><div id="cerr"></div>
+      <div class="field"><label>Name *</label><input class="input" name="name" required value="${esc(c.name||'')}"></div>
+      <div class="row2"><div class="field"><label>Slug</label><input class="input" name="slug" value="${esc(c.slug||'')}" placeholder="auto"></div><div class="field"><label>Sort order</label><input class="input" type="number" name="sortOrder" value="${esc(c.sortOrder)}"></div></div>
+      <div class="field"><label>Description</label><textarea class="input" name="description" style="min-height:80px">${esc(c.description||'')}</textarea></div>
+      <div class="field"><label>Image URL (optional)</label><div class="inline"><input class="input" name="imageUrl" id="catImg" value="${esc(c.imageUrl||'')}"><button type="button" class="btn btn-light btn-sm" id="upCat">Upload</button></div><input type="file" accept="image/*" id="catFile" hidden></div>
+      <label class="check"><input type="checkbox" name="active" ${c.active?'checked':''}><span>Visible in store</span></label></div>
+      <div class="modal-f"><button type="button" class="btn btn-light" data-close-modal>Cancel</button><button class="btn btn-accent">Save</button></div></form>`);
+    bindUpload('#upCat', '#catFile', 'image', '#catImg');
+    $('#cf').onsubmit = async e => { e.preventDefault(); const btn=e.target.querySelector('.btn-accent'); setBusy(btn,true);
+      try{ await aapi('adminSaveCategory', {...formData(e.target), id:c.id}); closeModal(); toast('Category saved'); await refreshStore(); route(); }catch(err){ showErr($('#cerr'),err.message); setBusy(btn,false); } };
+  };
+  $('#newC').onclick = () => editor(null);
+  $$('[data-edit]').forEach(b=>b.onclick=()=>editor(list.find(c=>c.id===b.dataset.edit)));
+  $$('[data-del]').forEach(b=>b.onclick=async()=>{ if(!await confirmBox('Delete this category?')) return; try{ await aapi('adminDeleteCategory',{id:b.dataset.del}); toast('Deleted'); await refreshStore(); route(); }catch(err){ toast(err.message,true); } });
+}
+
+/* Orders */
+const ORDER_STATUSES = ['Pending','Paid','Payment Pending','Review','Refunded','Cancelled','Failed'];
+async function admOrders(el){
+  const list = await aapi('adminListOrders');
+  const draw = () => {
+    const term = ($('#osearch').value||'').toLowerCase(), st = $('#ostatus').value;
+    const rows = list.filter(o=>(!st || o.status===st) && (!term || (o.id+o.customerName+o.customerEmail).toLowerCase().includes(term)));
+    $('#otable').innerHTML = `<tr><th>Order</th><th>Customer</th><th>Items</th><th>Date</th><th>Status</th><th>Total</th><th></th></tr>` +
+      (rows.map(o=>`<tr><td><b>${esc(o.id)}</b></td><td>${esc(o.customerName)}<br><small class="muted">${esc(o.customerEmail)}</small></td><td>${o.items.length}</td><td>${fdt(o.createdAt)}</td>
+        <td><span class="pill ${esc(o.status)}">${esc(o.status)}</span></td><td><b>${fmt(o.total)}</b></td><td><button class="btn btn-light btn-sm" data-view="${esc(o.id)}">View</button></td></tr>`).join('') || '<tr><td colspan="7" class="muted">No orders found</td></tr>');
+    $$('[data-view]').forEach(b=>b.onclick=()=>orderDetail(list.find(o=>o.id===b.dataset.view)));
+    const paid = rows.filter(o=>o.status==='Paid');
+    $('#osum').textContent = `${rows.length} orders · ${fmt(paid.reduce((s,o)=>s+o.total,0))} paid`;
+  };
+  el.innerHTML = admHead('Orders', `<button class="btn btn-light btn-sm" id="oexp">Export CSV</button>`) + `<div class="box"><div class="toolbar"><input class="input" id="osearch" placeholder="Search order, name, email…">
+    <select class="input" id="ostatus" style="max-width:200px"><option value="">All statuses</option>${ORDER_STATUSES.map(s=>`<option>${s}</option>`).join('')}</select><span class="muted" id="osum" style="align-self:center;font-size:14px"></span></div>
+    <div class="t-wrap"><table class="t" id="otable"></table></div></div>`;
+  $('#osearch').oninput = draw; $('#ostatus').onchange = draw; draw();
+  $('#oexp').onclick = () => downloadCsv('orders.csv', [['Order','Date','Customer','Email','Country','Status','Subtotal','Discount','Coupon','VAT','Total','Items','PayPal Capture'],
+    ...list.map(o=>[o.id,o.createdAt,o.customerName,o.customerEmail,o.country,o.status,o.subtotal,o.discount,o.couponCode,o.vat,o.total,o.items.map(i=>i.name).join(' | '),o.paypalCaptureId])]);
+}
+function orderDetail(o){
+  openModal(`<div class="modal-h"><h3>Order ${esc(o.id)}</h3><button class="icon-btn" data-close-modal>✕</button></div><div class="modal-b">
+    <div class="row2"><div><b>Customer</b><br>${esc(o.customerName)}<br><span class="muted">${esc(o.customerEmail)}</span><br><span class="muted">${esc(o.country||'')}</span></div>
+    <div><b>Payment</b><br>Created ${fdt(o.createdAt)}<br>Paid ${fdt(o.paidAt)}<br><small class="muted">Mode: ${esc((o.paymentMode||'—').toUpperCase())}<br>PayPal order: ${esc(o.paypalOrderId||'—')}<br>Capture: ${esc(o.paypalCaptureId||'—')}<br>Payer: ${esc(o.payerEmail||'—')}</small></div></div>
+    <div style="margin:18px 0">${o.items.map(i=>`<div class="sum-row"><span>${esc(i.name)}</span><span>${fmt(i.price)}</span></div>`).join('')}
+      ${o.discount?`<div class="sum-row" style="color:var(--ok)"><span>Discount ${esc(o.couponCode)}</span><span>−${fmt(o.discount)}</span></div>`:''}
+      <div class="sum-row total"><span>Total</span><span>${fmt(o.total)}</span></div><p class="muted" style="font-size:13px;text-align:right">VAT ${fmt(o.vat)}</p></div>
+    <form id="of"><div class="row2"><div class="field"><label>Status</label><select class="input" name="status">${ORDER_STATUSES.map(s=>`<option ${s===o.status?'selected':''}>${s}</option>`).join('')}</select></div><div></div></div>
+    <div class="field"><label>Internal notes</label><textarea class="input" name="notes">${esc(o.notes||'')}</textarea></div></form></div>
+    <div class="modal-f" style="justify-content:space-between;flex-wrap:wrap"><div class="inline"><button class="btn btn-light btn-sm" id="oResend">Resend email</button>${o.paypalCaptureId && o.status==='Paid'?'<button class="btn btn-danger btn-sm" id="oRefund">Refund via PayPal</button>':''}</div>
+    <div class="inline"><button class="btn btn-light" data-close-modal>Close</button><button class="btn btn-accent" id="oSave">Save</button></div></div>`);
+  $('#oSave').onclick = async e => { setBusy(e.target,true); try{ await aapi('adminUpdateOrder', {id:o.id, ...formData($('#of'))}); closeModal(); toast('Order updated'); route(); }catch(err){ toast(err.message,true); setBusy(e.target,false); } };
+  $('#oResend').onclick = async e => { setBusy(e.target,true); try{ const r = await aapi('adminResendOrderEmail',{id:o.id}); toast(r.message); }catch(err){ toast(err.message,true); } setBusy(e.target,false); };
+  if($('#oRefund')) $('#oRefund').onclick = async () => { if(!await confirmBox(`Refund ${fmt(o.total)} to ${o.customerName} through PayPal? This cannot be undone.`)) return;
+    try{ await aapi('adminRefundOrder',{id:o.id}); toast('Refund issued'); route(); }catch(err){ toast(err.message,true); } };
+}
+function downloadCsv(name, rows){
+  const csv = rows.map(r=>r.map(v=>{ let s = String(v??''); if(/^[=+\-@]/.test(s)) s="'"+s; return '"'+s.replace(/"/g,'""')+'"'; }).join(',')).join('\n');
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob(['﻿'+csv],{type:'text/csv'})); a.download = name; a.click();
+}
+
+/* Customers */
+async function admCustomers(el){
+  const list = await aapi('adminListCustomers');
+  const draw = () => { const term = ($('#csearch').value||'').toLowerCase();
+    const rows = list.filter(c=>!term || (c.firstName+' '+c.lastName+c.email+c.country).toLowerCase().includes(term));
+    $('#ctable').innerHTML = `<tr><th>Customer</th><th>Country</th><th>Joined</th><th>Last login</th><th>Orders</th><th>Spent</th><th>Marketing</th><th>Status</th><th></th></tr>` +
+      (rows.map(c=>`<tr><td><b>${esc(c.firstName)} ${esc(c.lastName)}</b><br><small class="muted">${esc(c.email)}${c.phone?' · '+esc(c.phone):''}</small></td><td>${esc(c.country)}</td><td>${fdate(c.createdAt)}</td><td>${fdate(c.lastLogin)}</td>
+        <td>${c.orders}</td><td><b>${fmt(c.spent)}</b></td><td>${c.marketingOptIn?'Yes':'No'}</td><td><span class="pill ${esc(c.status)}">${esc(c.status)}</span></td>
+        <td style="white-space:nowrap"><button class="btn btn-light btn-sm" data-edit="${esc(c.id)}">Edit</button> <button class="btn btn-sm ${c.status==='blocked'?'btn-light':'btn-danger'}" data-block="${esc(c.id)}">${c.status==='blocked'?'Unblock':'Block'}</button></td></tr>`).join('') || '<tr><td colspan="9" class="muted">No customers yet</td></tr>');
+    $$('[data-block]').forEach(b=>b.onclick=async()=>{ const c=list.find(x=>x.id===b.dataset.block); try{ await aapi('adminUpdateCustomer',{id:c.id, status:c.status==='blocked'?'active':'blocked'}); toast('Customer updated'); route(); }catch(err){ toast(err.message,true); } });
+    $$('[data-edit]').forEach(b=>b.onclick=()=>customerEditor(list.find(x=>x.id===b.dataset.edit)));
+  };
+  el.innerHTML = admHead('Customers', `<button class="btn btn-light btn-sm" id="cexp">Export CSV</button>`) + `<div class="box"><div class="toolbar"><input class="input" id="csearch" placeholder="Search customers…"><span class="muted" style="align-self:center;font-size:14px">${list.length} customers</span></div><div class="t-wrap"><table class="t" id="ctable"></table></div></div>`;
+  $('#csearch').oninput = draw; draw();
+  $('#cexp').onclick = () => downloadCsv('customers.csv', [['ID','First name','Last name','Email','Phone','Country','Joined','Orders','Spent','Marketing opt-in','Status'], ...list.map(c=>[c.id,c.firstName,c.lastName,c.email,c.phone,c.country,c.createdAt,c.orders,c.spent,c.marketingOptIn?'Yes':'No',c.status])]);
+}
+function customerEditor(c){
+  openModal(`<div class="modal-h"><h3>Edit customer</h3><button class="icon-btn" data-close-modal>✕</button></div><form id="cu"><div class="modal-b"><div id="cuerr"></div>
+    <div class="row2"><div class="field"><label>First name</label><input class="input" name="firstName" value="${esc(c.firstName)}"></div><div class="field"><label>Last name</label><input class="input" name="lastName" value="${esc(c.lastName)}"></div></div>
+    <div class="field"><label>Email</label><input class="input" type="email" name="email" value="${esc(c.email)}"></div>
+    <div class="row2"><div class="field"><label>Phone</label><input class="input" name="phone" value="${esc(c.phone)}"></div><div class="field"><label>Country</label><input class="input" name="country" value="${esc(c.country)}"></div></div>
+    <div class="field"><label>Status</label><select class="input" name="status"><option value="active" ${c.status!=='blocked'?'selected':''}>Active</option><option value="blocked" ${c.status==='blocked'?'selected':''}>Blocked</option></select></div></div>
+    <div class="modal-f" style="justify-content:space-between"><button type="button" class="btn btn-danger btn-sm" id="cuDel">Delete account</button><div class="inline"><button type="button" class="btn btn-light" data-close-modal>Cancel</button><button class="btn btn-accent">Save</button></div></div></form>`);
+  $('#cu').onsubmit = async e => { e.preventDefault(); const btn=e.target.querySelector('.btn-accent'); setBusy(btn,true); try{ await aapi('adminUpdateCustomer',{id:c.id, ...formData(e.target)}); closeModal(); toast('Saved'); route(); }catch(err){ showErr($('#cuerr'),err.message); setBusy(btn,false); } };
+  $('#cuDel').onclick = async () => { closeModal(); if(!await confirmBox(`Permanently delete ${c.email}? Their order records are kept for accounting.`)) return; try{ await aapi('adminDeleteCustomer',{id:c.id}); toast('Customer deleted'); route(); }catch(err){ toast(err.message,true); } };
+}
+
+/* Coupons */
+async function admCoupons(el){
+  const list = await aapi('adminListCoupons');
+  el.innerHTML = admHead('Discount codes', `<button class="btn btn-accent btn-sm" id="newK">+ New code</button>`) + `<div class="box"><div class="t-wrap"><table class="t"><tr><th>Code</th><th>Discount</th><th>Min spend</th><th>Used</th><th>Expires</th><th>Status</th><th></th></tr>
+    ${list.map(k=>`<tr><td><b>${esc(k.code)}</b></td><td>${k.type==='percent'?k.value+'%':fmt(k.value)}</td><td>${k.minSpend?fmt(k.minSpend):'—'}</td><td>${k.usedCount}${k.maxUses?' / '+k.maxUses:''}</td><td>${k.expires?fdate(k.expires):'Never'}</td>
+    <td><span class="pill ${k.active?'active':'blocked'}">${k.active?'Active':'Off'}</span></td><td style="white-space:nowrap"><button class="btn btn-light btn-sm" data-edit="${esc(k.code)}">Edit</button> <button class="btn btn-danger btn-sm" data-del="${esc(k.code)}">Delete</button></td></tr>`).join('') || '<tr><td colspan="7" class="muted">No codes yet</td></tr>'}</table></div></div>`;
+  const editor = k => { const isNew=!k; k = k || {type:'percent', active:true};
+    openModal(`<div class="modal-h"><h3>${isNew?'New':'Edit'} discount code</h3><button class="icon-btn" data-close-modal>✕</button></div><form id="kf"><div class="modal-b"><div id="kerr"></div>
+      <div class="row2"><div class="field"><label>Code *</label><input class="input" name="code" required value="${esc(k.code||'')}" style="text-transform:uppercase"></div>
+      <div class="field"><label>Type</label><select class="input" name="type"><option value="percent" ${k.type==='percent'?'selected':''}>Percentage (%)</option><option value="fixed" ${k.type==='fixed'?'selected':''}>Fixed amount (£)</option></select></div></div>
+      <div class="row2"><div class="field"><label>Value *</label><input class="input" type="number" step="0.01" name="value" required value="${esc(k.value??'')}"></div><div class="field"><label>Minimum spend (£)</label><input class="input" type="number" step="0.01" name="minSpend" value="${esc(k.minSpend||'')}"></div></div>
+      <div class="row2"><div class="field"><label>Max uses (0 = unlimited)</label><input class="input" type="number" name="maxUses" value="${esc(k.maxUses||0)}"></div><div class="field"><label>Expiry date</label><input class="input" type="date" name="expires" value="${esc(k.expires||'')}"></div></div>
+      <label class="check"><input type="checkbox" name="active" ${k.active?'checked':''}><span>Active</span></label></div>
+      <div class="modal-f"><button type="button" class="btn btn-light" data-close-modal>Cancel</button><button class="btn btn-accent">Save</button></div></form>`);
+    $('#kf').onsubmit = async e => { e.preventDefault(); const btn=e.target.querySelector('.btn-accent'); setBusy(btn,true); try{ await aapi('adminSaveCoupon',{...formData(e.target), originalCode:k.code}); closeModal(); toast('Saved'); route(); }catch(err){ showErr($('#kerr'),err.message); setBusy(btn,false); } };
+  };
+  $('#newK').onclick = () => editor(null);
+  $$('[data-edit]').forEach(b=>b.onclick=()=>editor(list.find(k=>k.code===b.dataset.edit)));
+  $$('[data-del]').forEach(b=>b.onclick=async()=>{ if(!await confirmBox('Delete code '+b.dataset.del+'?')) return; try{ await aapi('adminDeleteCoupon',{code:b.dataset.del}); toast('Deleted'); route(); }catch(err){ toast(err.message,true); } });
+}
+
+/* Messages */
+async function admMessages(el){
+  const list = await aapi('adminListMessages');
+  ADM.unread = list.filter(m=>m.status==='new').length;
+  el.innerHTML = admHead('Messages') + `<div class="box">${list.map(m=>`<div class="order-card" style="${m.status==='new'?'border-color:var(--gold)':''}"><div class="oh"><div><b>${esc(m.subject||'Enquiry')}</b> — ${esc(m.name)} <span class="muted">&lt;${esc(m.email)}&gt;</span><br><small class="muted">${fdt(m.createdAt)}</small></div><span class="pill ${esc(m.status)}">${esc(m.status)}</span></div>
+    <p style="white-space:pre-wrap;font-size:15px">${esc(m.message)}</p>
+    <div class="inline" style="margin-top:12px;flex-wrap:wrap"><a class="btn btn-primary btn-sm" href="mailto:${esc(m.email)}?subject=${encodeURIComponent('Re: '+(m.subject||'Your enquiry'))}" data-mark="${esc(m.id)}" data-st="replied">Reply by email</a>
+    ${m.status==='new'?`<button class="btn btn-light btn-sm" data-mark="${esc(m.id)}" data-st="read">Mark read</button>`:`<button class="btn btn-light btn-sm" data-mark="${esc(m.id)}" data-st="new">Mark unread</button>`}
+    <button class="btn btn-danger btn-sm" data-del="${esc(m.id)}">Delete</button></div></div>`).join('') || '<p class="muted">No messages yet.</p>'}</div>`;
+  $$('[data-mark]').forEach(b=>b.addEventListener('click', async()=>{ try{ await aapi('adminUpdateMessage',{id:b.dataset.mark, status:b.dataset.st}); if(b.tagName!=='A') route(); }catch(err){ toast(err.message,true); } }));
+  $$('[data-del]').forEach(b=>b.onclick=async()=>{ if(!await confirmBox('Delete this message?')) return; try{ await aapi('adminDeleteMessage',{id:b.dataset.del}); route(); }catch(err){ toast(err.message,true); } });
+}
+
+/* Payments — PayPal gateway */
+async function admPayments(el){
+  const g = await aapi('adminGetPayments');
+  const opt = (name, list, cur) => `<select class="input" name="${name}">${list.map(([v,l])=>`<option value="${v}" ${v===cur?'selected':''}>${l}</option>`).join('')}</select>`;
+  const credBlock = (m, label, ready) => `
+    <div class="box" style="border:${g.paypalMode===m?'2px solid var(--ink)':'1px solid #e6e8ee'}">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:10px;flex-wrap:wrap"><h3 style="margin:0">${label} credentials</h3>
+        <span>${ready?'<span class="pill Paid">Configured</span>':'<span class="pill Failed">Not configured</span>'} ${g.paypalMode===m?'<span class="pill" style="background:var(--ink);color:#fff">ACTIVE</span>':''}</span></div>
+      <div class="field"><label>Client ID</label><input class="input" name="paypalClientId${m==='live'?'Live':'Sandbox'}" value="${esc(m==='live'?g.paypalClientIdLive:g.paypalClientIdSandbox)}" autocomplete="off" spellcheck="false"></div>
+      <div class="field"><label>Secret ${(m==='live'?g.secretLive:g.secretSandbox)?`<span class="muted" style="font-weight:500">— saved ${esc(m==='live'?g.secretLive:g.secretSandbox)}</span>`:''}</label>
+        <input class="input" type="password" name="secret${m==='live'?'Live':'Sandbox'}" placeholder="${(m==='live'?g.secretLive:g.secretSandbox)?'Leave blank to keep the saved secret':'Paste secret'}" autocomplete="new-password"></div>
+      <div class="inline" style="flex-wrap:wrap"><button type="button" class="btn btn-light btn-sm" data-test="${m}">Test ${label} connection</button>
+        ${(m==='live'?g.secretLive:g.secretSandbox)?`<button type="button" class="btn btn-danger btn-sm" data-clear="${m}">Remove secret</button>`:''}</div>
+    </div>`;
+  el.innerHTML = admHead('Payments', `<a class="btn btn-light btn-sm" href="https://developer.paypal.com/dashboard/applications" target="_blank" rel="noopener">PayPal Developer ↗</a>`) + `
+  <div class="kpis">
+    <div class="kpi"><small>Gateway status</small><b style="font-size:22px">${g.active.enabled?'<span style="color:var(--ok)">● Accepting</span>':'<span style="color:var(--danger)">● Not accepting</span>'}</b><span class="muted" style="font-size:13px">${g.paypalEnabled?'Switched on':'Switched off'}</span></div>
+    <div class="kpi"><small>Active mode</small><b style="font-size:22px">${g.paypalMode==='live'?'LIVE':'SANDBOX'}</b><span class="muted" style="font-size:13px">${g.paypalMode==='live'?'Real payments':'Test payments only'}</span></div>
+    <div class="kpi"><small>Live takings</small><b>${fmt(g.totals.live)}</b><span class="muted" style="font-size:13px">Sandbox: ${fmt(g.totals.sandbox)}</span></div>
+    <div class="kpi"><small>Refunded</small><b>${fmt(g.totals.refunded)}</b><span class="muted" style="font-size:13px">all time</span></div>
+  </div>
+  <form id="payf"><div class="cols2"><div>
+    <div class="box"><h3>Gateway</h3>
+      <label class="check" style="font-size:15px"><input type="checkbox" name="paypalEnabled" ${g.paypalEnabled?'checked':''}><span><b>Enable PayPal checkout</b><br><span class="muted" style="font-size:13px">Untick to pause all online payments (e.g. during maintenance). Free coupon orders still work.</span></span></label>
+      <div class="field" style="margin-top:10px"><label>Active mode</label>
+        <div class="inline" style="flex-wrap:wrap">
+          <label class="chip ${g.paypalMode==='sandbox'?'on':''}" style="display:flex;gap:8px;align-items:center"><input type="radio" name="paypalMode" value="sandbox" ${g.paypalMode!=='live'?'checked':''} hidden>🧪 Sandbox (testing)</label>
+          <label class="chip ${g.paypalMode==='live'?'on':''}" style="display:flex;gap:8px;align-items:center"><input type="radio" name="paypalMode" value="live" ${g.paypalMode==='live'?'checked':''} hidden>💷 Live (real payments)</label>
+        </div><small class="muted">Orders always capture and refund in the mode they were created in, so switching is safe at any time.</small></div>
+    </div>
+    ${credBlock('sandbox','Sandbox', g.readySandbox)}
+    ${credBlock('live','Live', g.readyLive)}
+    <div class="box"><h3>How to get your credentials</h3><ol style="margin-left:18px;font-size:14px;color:var(--ink-3);line-height:1.9">
+      <li>Sign in at <b>developer.paypal.com</b> with your PayPal Business account.</li>
+      <li>Go to <b>Apps &amp; Credentials</b> and choose the <b>Sandbox</b> or <b>Live</b> toggle.</li>
+      <li>Click <b>Create App</b> (type: Merchant), then copy the <b>Client ID</b> and <b>Secret</b>.</li>
+      <li>Paste them above, click <b>Save</b>, then <b>Test connection</b>.</li>
+      <li>For sandbox test purchases, use a <b>Personal</b> sandbox account from <i>Testing Tools → Sandbox Accounts</i>.</li></ol></div>
+  </div><div>
+    <div class="box"><h3>Checkout display</h3>
+      <div class="field"><label>Business name shown on PayPal</label><input class="input" name="paypalBrandName" maxlength="127" value="${esc(g.paypalBrandName)}"></div>
+      <div class="row2"><div class="field"><label>Card statement text</label><input class="input" name="paypalSoftDescriptor" maxlength="22" value="${esc(g.paypalSoftDescriptor)}"><small class="muted">Max 22 characters</small></div>
+        <div class="field"><label>Order number prefix</label><input class="input" name="paypalOrderPrefix" maxlength="6" value="${esc(g.paypalOrderPrefix)}" style="text-transform:uppercase"></div></div>
+      <div class="row2"><div class="field"><label>Button colour</label>${opt('paypalButtonColor',[['gold','Gold'],['blue','Blue'],['silver','Silver'],['white','White'],['black','Black']],g.paypalButtonColor)}</div>
+        <div class="field"><label>Button shape</label>${opt('paypalButtonShape',[['pill','Pill'],['rect','Rounded'],['sharp','Sharp']],g.paypalButtonShape)}</div></div>
+      <div class="row2"><div class="field"><label>Button label</label>${opt('paypalButtonLabel',[['pay','Pay with PayPal'],['paypal','PayPal'],['checkout','PayPal Checkout'],['buynow','Buy Now']],g.paypalButtonLabel)}</div>
+        <div class="field"><label>Button height (25–55px)</label><input class="input" type="number" min="25" max="55" name="paypalButtonHeight" value="${esc(g.paypalButtonHeight)}"></div></div>
+      <h3 style="margin-top:8px">Payment methods</h3>
+      <label class="check"><input type="checkbox" name="paypalEnableCard" ${g.paypalEnableCard?'checked':''}><span><b>Debit &amp; credit cards</b> — guests can pay by card without a PayPal account</span></label>
+      <label class="check"><input type="checkbox" name="paypalEnablePayLater" ${g.paypalEnablePayLater?'checked':''}><span><b>Pay in 3</b> (PayPal Pay Later) — for eligible UK buyers</span></label>
+    </div>
+    <div class="box"><h3>Live button preview</h3><p class="muted" style="font-size:13px;margin-bottom:12px">Preview uses your saved ${esc(g.paypalMode)} Client ID. Save changes to refresh it.</p>
+      <div id="ppPreview" style="max-width:360px"></div></div>
+  </div></div>
+  <div class="box" style="position:sticky;bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;box-shadow:var(--shadow)">
+    <span class="muted" style="font-size:14px">Secrets are stored in Apps Script Script Properties and are never sent to the browser.</span>
+    <button class="btn btn-accent">Save payment settings</button></div></form>
+  <div class="box"><h3>Recent PayPal transactions</h3><div class="t-wrap"><table class="t"><tr><th>Order</th><th>Customer</th><th>Date</th><th>Mode</th><th>PayPal capture</th><th>Status</th><th>Total</th></tr>
+    ${g.transactions.map(t=>`<tr><td><b>${esc(t.id)}</b></td><td>${esc(t.customerName)}<br><small class="muted">${esc(t.payerEmail||'')}</small></td><td>${fdt(t.createdAt)}</td>
+      <td><span class="pill ${t.mode==='live'?'Paid':''}">${esc(t.mode.toUpperCase())}</span></td><td><small>${esc(t.paypalCaptureId||'—')}</small></td><td><span class="pill ${esc(t.status)}">${esc(t.status)}</span></td><td><b>${fmt(t.total)}</b></td></tr>`).join('') || '<tr><td colspan="7" class="muted">No PayPal transactions yet</td></tr>'}</table></div></div>`;
+
+  // mode chips
+  $$('input[name=paypalMode]').forEach(r=>r.onchange=()=>$$('input[name=paypalMode]').forEach(x=>x.parentElement.classList.toggle('on', x.checked)));
+  $('#payf').onsubmit = async e => { e.preventDefault(); const btn = e.target.querySelector('.btn-accent'); setBusy(btn,true,'Saving…');
+    const d = formData(e.target); d.paypalMode = (e.target.querySelector('input[name=paypalMode]:checked')||{}).value || 'sandbox';
+    try{ const r = await aapi('adminSavePayments', d); toast(r.message); await refreshStore(); route(); }
+    catch(err){ toast(err.message, true); setBusy(btn,false); await refreshStore(); } };
+  $$('[data-test]').forEach(b=>b.onclick=async()=>{ setBusy(b,true,'Testing…'); try{ const r = await aapi('adminTestPaypal',{mode:b.dataset.test}); toast(r.message); }catch(err){ toast(err.message,true); } setBusy(b,false); });
+  $$('[data-clear]').forEach(b=>b.onclick=async()=>{ if(!await confirmBox(`Remove the saved ${b.dataset.clear} secret? Checkout in that mode will stop working until a new secret is added.`)) return;
+    try{ const r = await aapi('adminClearPaypalSecret',{mode:b.dataset.clear}); toast(r.message); route(); }catch(err){ toast(err.message,true); } });
+
+  // real button preview (no-op order)
+  const cfg = { color:g.paypalButtonColor, shape:g.paypalButtonShape, label:g.paypalButtonLabel, height:g.paypalButtonHeight, card:g.paypalEnableCard, payLater:g.paypalEnablePayLater };
+  const cid = g.paypalMode==='live' ? g.paypalClientIdLive : g.paypalClientIdSandbox;
+  const box = $('#ppPreview');
+  if(!cid){ box.innerHTML = '<div class="alert alert-info">Add a Client ID to see the preview.</div>'; return; }
+  try{ await loadPaypal(cfg, cid);
+    paypal.Buttons({ style: ppStyle(cfg), onClick:(d,a)=>{ toast('Preview only — no payment is taken here'); return a.reject(); }, createOrder:()=>Promise.reject(new Error('preview')) }).render('#ppPreview');
+  }catch(err){ box.innerHTML = `<div class="alert alert-err">${esc(err.message)} — check the Client ID.</div>`; }
+}
+
+/* Settings */
+async function admSettings(el){
+  const s = await aapi('adminGetSettings');
+  const inp = (k, l, ph='', type='text') => `<div class="field"><label>${l}</label><input class="input" type="${type}" name="${k}" value="${esc(s[k])}" placeholder="${esc(ph)}"></div>`;
+  el.innerHTML = admHead('Settings') + `<div class="cols2"><div>
+    <form class="box" id="sf"><h3>Store details</h3>
+      <div class="row2">${inp('storeName','Store name')}${inp('tagline','Tagline')}</div>
+      <div class="row2">${inp('supportEmail','Support email','','email')}${inp('phone','Phone')}</div>
+      ${inp('address','Business address')}
+      <div class="row2">${inp('companyNumber','Companies House no.','Optional')}${inp('vatNumber','VAT registration no.','Optional')}</div>
+      <div class="row2">${inp('vatRate','VAT rate (%)','20','number')}${inp('currency','Currency','GBP')}</div>
+      ${inp('announcement','Announcement bar text','Leave empty to hide')}
+      ${inp('adminNotifyEmail','Notify me of new orders & messages at','you@example.com','email')}
+      ${inp('orderEmailFooter','Order email footer')}
+      <button class="btn btn-accent">Save store settings</button></form>
+  </div><div>
+    <div class="box"><h3>Payment gateway</h3><p class="muted" style="font-size:14px;margin-bottom:14px">PayPal credentials, test/live mode, checkout buttons and accepted payment methods are managed in Payments.</p><a href="#/admin/payments" class="btn btn-light">Open Payments →</a></div>
+    <form class="box" id="apf"><h3>Admin login</h3>
+      <div class="field"><label>Admin email</label><input class="input" type="email" name="email" value="${esc(s.adminEmail)}"></div>
+      <div class="field"><label>Current password</label><input class="input" type="password" name="currentPassword" required></div>
+      <div class="field"><label>New password (min 10 chars)</label><input class="input" type="password" name="newPassword" required minlength="10"></div>
+      <button class="btn btn-primary">Update admin login</button></form>
+  </div></div>`;
+  $('#sf').onsubmit = async e => { e.preventDefault(); const btn=e.target.querySelector('button'); setBusy(btn,true); try{ const r = await aapi('adminSaveSettings', formData(e.target)); toast(r.message); await refreshStore(); applySettings(); }catch(err){ toast(err.message,true); } setBusy(btn,false); };
+  $('#apf').onsubmit = async e => { e.preventDefault(); const btn=e.target.querySelector('button'); setBusy(btn,true); try{ const r = await aapi('adminChangePassword', formData(e.target)); toast(r.message); e.target.reset(); }catch(err){ toast(err.message,true); } setBusy(btn,false); };
+}
+
+/* =============================================================================
+   BOOT
+============================================================================= */
+function applySettings(){
+  const st = S.store?.settings || {};
+  const a = $('#announce');
+  if(st.announcement){ a.innerHTML = esc(st.announcement).replace(/\b([A-Z0-9]{5,})\b/, '<b>$1</b>'); a.classList.remove('hidden'); } else a.classList.add('hidden');
+  if(st.tagline) $('#footTagline').textContent = st.tagline + ' — designed in Britain, used worldwide.';
+  if(st.address) $('#footAddress').innerHTML = esc(st.address).replace(/, /g,'<br>');
+  if(st.phone){ $('#footPhone').textContent = st.phone; $('#footPhone').href = 'tel:' + st.phone.replace(/\s/g,''); }
+  if(st.supportEmail) $('#footEmail').textContent = st.supportEmail;
+  $('#footCompany').textContent = [st.companyNumber?'Company No. '+st.companyNumber:'', st.vatNumber?'VAT No. '+st.vatNumber:''].filter(Boolean).join(' · ');
+  $('#footCats').innerHTML = cats().map(c=>`<li><a href="#/shop/${esc(c.slug)}">${esc(c.name)}</a></li>`).join('') + '<li><a href="#/shop">All products</a></li>';
+}
+
+document.addEventListener('click', e => {
+  const add = e.target.closest('[data-add]'); if(add){ e.preventDefault(); addToCart(add.dataset.add); if(location.hash.startsWith('#/product')) add.textContent='In your basket ✓'; return; }
+  const rm = e.target.closest('[data-remove]'); if(rm){ removeFromCart(rm.dataset.remove); return; }
+  if(e.target.closest('[data-close-drawer]')) closeDrawer();
+  if(e.target.closest('[data-close-modal]') || e.target.id==='modal') closeModal();
+});
+$('#overlay').onclick = closeDrawer;
+$('#cartBtn').onclick = openDrawer;
+$('#burger').onclick = () => $('#menu').classList.toggle('open');
+$('#searchToggle').onclick = () => { $('#searchBar').classList.toggle('open'); $('#searchInput').focus(); };
+$('#searchForm').onsubmit = e => { e.preventDefault(); const q = $('#searchInput').value.trim(); location.hash = '#/shop' + (q ? '?q=' + encodeURIComponent(q) : ''); $('#searchBar').classList.remove('open'); };
+document.addEventListener('keydown', e => { if(e.key==='Escape'){ closeModal(); closeDrawer(); } });
+$('#year').textContent = new Date().getFullYear();
+if(!LS.get('cookie', null)) $('#cookie').classList.remove('hidden');
+$('#cookieOk').onclick = () => { LS.set('cookie','all'); $('#cookie').classList.add('hidden'); };
+$('#cookieEss').onclick = () => { LS.set('cookie','essential'); $('#cookie').classList.add('hidden'); };
+window.addEventListener('hashchange', route);
+
+(async function boot(){
+  try{ S.store = await api('getStore'); }
+  catch(e){ app.innerHTML = `<div class="wrap empty"><h3>We're having trouble loading the store</h3><p>${esc(e.message)}</p><button class="btn btn-primary" style="margin-top:16px" onclick="location.reload()">Try again</button></div>`; return; }
+  if(DEMO) console.info('%cHRG store running in DEMO MODE — set CONFIG.API_URL to your Apps Script Web App URL.', 'color:#d9572b;font-weight:bold');
+  applySettings(); saveCart(); route();
+})();
+</script>
+</body>
+</html>
